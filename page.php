@@ -1,0 +1,50 @@
+ <?php
+       /**
+       * The template for displaying all pages.
+       *
+       * This is the template that displays all pages by default.
+       * Please note that this is the WordPress construct of pages
+       * and that other 'pages' on your WordPress site will use a
+       * different template.
+       *
+       * @package thebis 
+       */
+       get_header();
+       
+       ?>
+
+ <section class="white-section blog-section single-post-section">
+            <div class="container">
+                <div class="row">
+                    <?php if(have_posts()) : ?>
+                     <?php while(have_posts()) : the_post(); ?>
+                    <div class="col-xl-8 col-md-8 col-sm-12 single-post-wrapper">
+                      <div class="content-page">
+                      <?php if(has_post_thumbnail()) : ?>
+                       <?php the_post_thumbnail(); ?>&nbsp;
+                       <?php endif; ?>
+                        <?php the_content(); ?>
+                         <?php
+                           wp_link_pages( array(
+                             'before' => '<div class="page-links">' . esc_html__('Pages: ', 'thebis' ),
+                            'after'  => '</div>',
+                            ) );
+                              ?>
+                            </div>
+                    </div>
+                     <?php endwhile; ?>
+                     <?php endif; ?>
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <aside class="sidebar">
+                            <?php get_sidebar(); ?>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php 
+          if ( comments_open() || get_comments_number() ) :
+              comments_template();
+          endif; 
+        ?>
+        <?php get_footer(); ?>

@@ -14145,6 +14145,10 @@ button:focus, input:focus {
     padding: 0 25px;
 }
 
+.navbar-default .navbar-inner .navbar-menu .navbar-menu-list li a:hover {
+    color: #35B233;
+}
+
 @media (max-width: 1199px) {
     .navbar-default .navbar-inner .navbar-menu .navbar-menu-list li a {
         padding: 0 20px;

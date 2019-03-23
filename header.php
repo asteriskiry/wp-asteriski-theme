@@ -28,18 +28,18 @@
             <div class="container-fluid navbar-inner">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-link d-flex align-items-center">
                     <div class="navbarlogo">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/asteriski-logo.png'; ?>" />
+                        <img class="hvr-rotate-more" src="<?php echo get_template_directory_uri() . '/assets/img/asteriski-logo.png'; ?>" />
                     </div>
-                        <div class="navbartitles">
-                            <h2 class="blogtitle">
-                                <?php bloginfo( 'name' ); ?>
-                            </h2>
-                            <p class="blogdesc">
-                                <?php bloginfo( 'description' ); ?>
-                            </p>
-                        </div>
+                    <div class="navbartitles">
+                        <h2 class="blogtitle">
+                            <?php bloginfo( 'name' ); ?>
+                        </h2>
+                        <p class="blogdesc">
+                            <?php bloginfo( 'description' ); ?>
+                        </p>
+                    </div>
                 </a>
-                    <div class="navbar-menu">
+                <div class="navbar-menu">
 <?php wp_nav_menu( 
     array(
         'container'        => 'ul', 
@@ -76,7 +76,7 @@ if ($thebis_header_section =='show') {
         </div>
     </div>
     <form class="search-form" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <input type="text" name="s" placeholder="<?php echo esc_attr__('search here','thebis'); ?>">
+        <input type="text" name="s" placeholder="Hae tästä">
     </form>
 </div>
                 </div>

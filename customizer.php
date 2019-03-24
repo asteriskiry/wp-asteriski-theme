@@ -1,6 +1,8 @@
 <?php
 
-/* Theme customizer menus */
+/**
+ * Theme customizer menus
+ */
 
 function asteriski_customize_register($wp_customize)
 {
@@ -31,23 +33,20 @@ function asteriski_customize_register($wp_customize)
         ));
     }
 
-/* Copyright text */
-$wp_customize->add_section(
-    'asteriski_copyright', array(
+    /* Copyright text */
+    $wp_customize->add_section('asteriski_copyright', array(
         'priority' => 18,
         'capability' => 'edit_theme_options',
         'theme_supports' => '',
         'title' => __('Copyright teksti', 'asteriski'),
         'description' => 'Teksti joka näkyy alatunnisteessa'
     ));
-$wp_customize->add_setting(
-    'asteriski_footer_text', array(
+    $wp_customize->add_setting('asteriski_footer_text', array(
         'default'             => '',
         'type'                => 'theme_mod',
         'sanitize_callback'   => 'wp_kses_post'
     ));
-$wp_customize->add_control(
-    'asteriski_footer_text', array(
+    $wp_customize->add_control('asteriski_footer_text', array(
         'label'    => esc_html__('Copyright teksti', 'asteriski'),
         'section'  => 'asteriski_copyright',
         'type'     => 'textarea',

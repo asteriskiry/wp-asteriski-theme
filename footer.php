@@ -1,76 +1,67 @@
-  <footer class="footer-area">
-            <div class="container">
-                <div class="footer-top">
-                   <div class="row clearfix">
-                   <?php dynamic_sidebar('thebis-footer-widget-area'); ?>
-                  </div>
-                </div>
+<footer class="footer-area">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row clearfix">
+                <?php dynamic_sidebar('asteriski-footer-widget-area'); ?>
             </div>
-            <?php 
-            $thebis_footer_section_hideshow = get_theme_mod("thebis_footer_section_hideshow", 'show');
-            $thebis_social_icon_url_1 = get_theme_mod( "thebis_social_icon_url_1", '' );
-            $thebis_social_icon_url_2 = get_theme_mod( "thebis_social_icon_url_2", '' );
-            $thebis_social_icon_url_3 = get_theme_mod( "thebis_social_icon_url_3", '' );
-            $thebis_social_icon_url_4 = get_theme_mod( "thebis_social_icon_url_4", '' );
-            $thebis_social_icon_url_5 = get_theme_mod( "thebis_social_icon_url_5", '' );
+        </div>
+    </div>
+<?php 
+$asteriski_social_icon_url_facebook = get_theme_mod( "asteriski_social_icon_url_facebook", '' );
+$asteriski_social_icon_url_twitter = get_theme_mod( "asteriski_social_icon_url_twitter", '' );
+$asteriski_social_icon_url_youtube = get_theme_mod( "asteriski_social_icon_url_youtube", '' );
+$asteriski_social_icon_url_instagram = get_theme_mod( "asteriski_social_icon_url_instagram", '' );
+$asteriski_social_icon_url_github = get_theme_mod( "asteriski_social_icon_url_github", '' );
+?>
+<div class="footer-inner ">
+    <div class="container">
+        <div class="footer-social d-flex">
+            <?php if ( $asteriski_social_icon_url_facebook ): ?>
+            <div class="social-box">
+                <a href="<?php echo esc_url( $asteriski_social_icon_url_facebook ); ?>">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <?php endif; ?>
+            <?php if ( $asteriski_social_icon_url_twitter ): ?>
+            <div class="social-box">
+                <a href="<?php echo esc_url( $asteriski_social_icon_url_twitter ); ?>">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <?php endif; ?>
+            <?php if ( $asteriski_social_icon_url_youtube ): ?>
+            <div class="social-box">
+                <a href="<?php echo esc_url( $asteriski_social_icon_url_youtube ); ?>">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <?php endif; ?>
+            <?php if ( $asteriski_social_icon_url_instagram ): ?>
+            <div class="social-box">
+                <a href="<?php echo esc_url( $asteriski_social_icon_url_instagram ); ?>">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <?php endif; ?>
+            <?php if ( $asteriski_social_icon_url_github ): ?>
+            <div class="social-box">
+                <a href="<?php echo esc_url( $asteriski_social_icon_url_github ); ?>">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <?php endif; ?>
+        </div>
 
-            if( $thebis_footer_section_hideshow == 'show' ) :
-             ?>
-            <div class="footer-inner ">
-                <div class="container">
-                    <div class="footer-social d-flex">
-                        <?php if ( $thebis_social_icon_url_1 ): ?>
-                        <div class="social-box">
-                            <a href="<?php echo esc_url( $thebis_social_icon_url_1 ); ?>">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ( $thebis_social_icon_url_2 ): ?>
-                        <div class="social-box">
-                            <a href="<?php echo esc_url( $thebis_social_icon_url_2 ); ?>">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ( $thebis_social_icon_url_3 ): ?>
-                        <div class="social-box">
-                            <a href="<?php echo esc_url( $thebis_social_icon_url_3 ); ?>">
-                               <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ( $thebis_social_icon_url_4 ): ?>
-                        <div class="social-box">
-                            <a href="<?php echo esc_url( $thebis_social_icon_url_4 ); ?>">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ( $thebis_social_icon_url_5 ): ?>
-                        <div class="social-box">
-                            <a href="<?php echo esc_url( $thebis_social_icon_url_5 ); ?>">
-                                <i class="fab fa-vk"></i>
-                            </a>
-                        </div>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <div class="footer-copyright">
-                        <?php
-                       if( get_theme_mod('thebis_footer_text') ) : ?>
-                        <p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('thebis_footer_text'))); ?></p>
-                        <?php else : ?>
-						 <a href="<?php echo esc_url( esc_html__( 'https://wordpress.org/', 'thebis' ) ); ?>" class="imprint">
-							<?php
-							/* translators: %s: WordPress. */
-							printf( esc_html__( 'Proudly powered by %s.', 'thebis' ), 'WordPress' );
-							?>
-						</a>
-					<?php 	endif; ?>
-                    </div>
-                </div>
-            </div>
-          <?php endif; ?>
-        </footer>
+        <div class="footer-copyright">
+<?php
+    if( get_theme_mod('asteriski_footer_text') ) : ?>
+    <p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_footer_text'))); ?></p>
+    <?php else : ?>
+    <p>© <?php echo date("Y"); ?> Asteriski ry</p>
+    <?php 	endif; ?>
+        </div>
+    </div>
+</div>
+</footer>
 <?php wp_footer(); ?>

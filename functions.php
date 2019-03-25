@@ -180,3 +180,9 @@ function asteriski_sidebars()
     ));
 }
 add_action('widgets_init', 'asteriski_sidebars');
+
+/**
+ * Max-height for featured images
+ */
+
+set_post_thumbnail_size( 9999, 400, false );

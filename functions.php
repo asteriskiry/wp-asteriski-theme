@@ -127,7 +127,6 @@ if (! function_exists('asteriski_enqueue_styles')) {
     function asteriski_enqueue_styles()
     {
 
-        // Bootstrap CSS
         wp_enqueue_style('asteriski-font', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Poppins:400,500,600,700,800');
         wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css');
         wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/css/swiper.css');

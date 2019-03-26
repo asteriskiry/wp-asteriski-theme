@@ -2654,7 +2654,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .btn {
-    background-color: #FFF;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0);
     color: #35B233;
     display: inline-block;
     font-weight: 400;
@@ -24063,4 +24064,17 @@ form#searchform input[type="submit"] {
 .riski-info-input {
     display: inline;
     width: 70%;
+}
+
+.page404 {
+    margin: auto;
+    width: 400px
+}
+
+.page404 img {
+    display: block;
+}
+
+.page404 a {
+    margin: 20px 125px 20px 125px;
 }

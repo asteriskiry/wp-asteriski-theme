@@ -1,7 +1,7 @@
 <?php
 
 /**
- * asteriski functions
+ * Asteriski theme functions
  */
 
 /* Customizer */

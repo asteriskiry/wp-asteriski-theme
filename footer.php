@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template for footer area
+ */
+?>
 <footer class="footer-area">
     <div class="container">
         <div class="footer-top">
@@ -6,7 +11,7 @@
             </div>
         </div>
     </div>
-<?php 
+<?php
 $asteriski_social_icon_url_facebook = get_theme_mod( "asteriski_social_icon_url_facebook", '' );
 $asteriski_social_icon_url_twitter = get_theme_mod( "asteriski_social_icon_url_twitter", '' );
 $asteriski_social_icon_url_youtube = get_theme_mod( "asteriski_social_icon_url_youtube", '' );
@@ -55,11 +60,11 @@ $asteriski_social_icon_url_github = get_theme_mod( "asteriski_social_icon_url_gi
 
         <div class="footer-copyright">
 <?php
-    if( get_theme_mod('asteriski_footer_text') ) : ?>
-    <p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_footer_text'))); ?></p>
-    <?php else : ?>
-    <p>© <?php echo date("Y"); ?> Asteriski ry</p>
-    <?php 	endif; ?>
+if( get_theme_mod('asteriski_footer_text') ) : ?>
+<p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_footer_text'))); ?></p>
+<?php else : ?>
+<p>© <?php echo date("Y"); ?> Asteriski ry</p>
+<?php endif; ?>
         </div>
     </div>
 </div>

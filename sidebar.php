@@ -1,9 +1,7 @@
-    <?php
-    /**
-     * The sidebar containing the main widget area.
-     *
-     * @package asteriski
-     */
+<?php
+/**
+ * The sidebar containing the main widget area
+ */
 
-    dynamic_sidebar('blog-sidebar');
-    ?> 
+dynamic_sidebar('blog-sidebar');
+?>

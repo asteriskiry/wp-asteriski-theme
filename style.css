@@ -14291,7 +14291,7 @@ button:focus, input:focus {
 
 .navbar-small {
     height: var(--navbar_small_height) !important;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .navbar-fill:after {
@@ -14416,7 +14416,7 @@ button:focus, input:focus {
 .mobile-menu {
     z-index: 997;
     height: var(--navbar_small_height);
-    background-color: #fff;
+    background-color: #000;
     -webkit-box-shadow: 0 5px 10px 0 rgba(31, 31, 31, 0.06);
     box-shadow: 0 5px 10px 0 rgba(31, 31, 31, 0.06);
     border-bottom: 1px solid transparent;
@@ -15739,7 +15739,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 25px;
     height: 3px;
-    background-color: var(--toggle_color);
+    background-color: var(--primary_color);
     border-radius: 0px;
     position: absolute;
     -webkit-transition-property: -webkit-transform;
@@ -23015,7 +23015,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 
     .header-type-two,
     .header-type-one {
-        background: #fff;
+        background: #000;
     }
 }
 /*-------------- Team --------------*/

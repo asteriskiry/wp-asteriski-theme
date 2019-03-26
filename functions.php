@@ -23,6 +23,7 @@ if (! function_exists('asteriski_theme_setup')) {
         add_theme_support('post-thumbnails');
 
         $defaults = array(
+            'default-image'          => get_template_directory_uri() .'/assets/img/tausta.jpg',
             'width'                  => 1920,
             'height'                 => 540,
             'uploads'                => true,
@@ -64,20 +65,18 @@ function asteriski_header_style()
 <style type="text/css">
 <?php
     //Check if user has defined any header image.
-    if (get_header_image()) :
 ?>
 
-    .blogtitle
-    {
+    .blogtitle {
         color: #<?php echo esc_attr($asteriski_header_text_color); ?>;
-
     }
-    .page-header
-    {
+    .page-header {
+        background-image:url('<?php header_image(); ?>');
+    }
+    .index-page-header {
         background-image:url('<?php header_image(); ?>');
     }
 
-    <?php endif; ?>	
 </style>
 <?php
 }
@@ -94,8 +93,9 @@ function asteriski_detect_button()
 }
 
 /**
- * admin  JS scripts
+ * admin JS scripts
  */
+
 function asteriski_admin_enqueue_scripts($hook)
 {
     wp_enqueue_style(

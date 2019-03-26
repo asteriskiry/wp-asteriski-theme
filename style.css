@@ -17540,7 +17540,6 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 .page-header {
     position: relative;
     height: 200px;
-    background-image: url("assets/img/tausta.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17665,7 +17664,6 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 .index-page-header {
     position: relative;
     height: 600px;
-    background-image: url("assets/img/tausta.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

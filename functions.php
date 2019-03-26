@@ -58,25 +58,29 @@ if (! function_exists('asteriski_theme_setup')) {
     add_action('after_setup_theme', 'asteriski_theme_setup');
 }
 
+/**
+ * Get header style and image from WP settings
+ */
 
 function asteriski_header_style()
 {
     $asteriski_header_text_color = get_header_textcolor(); ?>
 <style type="text/css">
 <?php
-    //Check if user has defined any header image.
+    if (get_header_image()) :
 ?>
 
     .blogtitle {
         color: #<?php echo esc_attr($asteriski_header_text_color); ?>;
     }
     .page-header {
-        background-image:url('<?php header_image(); ?>');
+        background-image: url('<?php header_image(); ?>');
     }
     .index-page-header {
-        background-image:url('<?php header_image(); ?>');
+        background-image: url('<?php header_image(); ?>');
     }
 
+    <?php endif; ?>	
 </style>
 <?php
 }
@@ -150,6 +154,9 @@ if (! function_exists('asteriski_enqueue_scripts')) {
     add_action('wp_enqueue_scripts', 'asteriski_enqueue_scripts');
 }
 
+/**
+ * Sidebars
+ */
 
 function asteriski_sidebars()
 {

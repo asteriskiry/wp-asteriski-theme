@@ -24064,6 +24064,8 @@ form#searchform input[type="submit"] {
     width: 70%;
 }
 
+/* 404 page */
+
 .page404 {
     margin: auto;
     width: 400px
@@ -24074,5 +24076,25 @@ form#searchform input[type="submit"] {
 }
 
 .page404 a {
+    margin: 20px 125px 20px 125px;
+}
+
+/* Minutes archive */
+
+#pk {
+    margin: 20px 125px 20px 125px;
+}
+
+.pk-single {
+    margin: 20px 125px 20px 125px;
+}
+
+/* Exam archive */
+
+.tentit {
+    margin: 20px 125px 20px 125px;
+}
+
+#kurssit-archive {
     margin: 20px 125px 20px 125px;
 }

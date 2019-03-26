@@ -183,7 +183,7 @@ a {
 }
 
 a:hover {
-    color: #0056b3;
+    color: #318030;
     text-decoration: underline;
 }
 
@@ -3288,7 +3288,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-    color: #0056b3;
+    color: #318030;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent;
@@ -5012,7 +5012,7 @@ tbody.collapse.show {
 }
 
 .page-link:hover {
-    color: #0056b3;
+    color: #318030;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6;

@@ -11,7 +11,7 @@
       <div class="card-blog-body">
         <span>
           <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" class="blog-by-img"><?php echo get_avatar( get_the_author_meta('user_email'), $size = '140'); ?>
-            <?php echo esc_html__('By','thebis'); ?>
+            <?php echo esc_html__('By','asteriski'); ?>
             <?php the_author(); ?>
           </a>
         </span>
@@ -30,7 +30,7 @@
           <p class="info d-flex align-items-end">
             <span>
               <a href="<?php the_permalink(); ?>" class="blog-more-btn">
-                <?php echo esc_html__('Read More','thebis'); ?>
+                <?php echo esc_html__('Read More','asteriski'); ?>
               </a>
             </span>
           </p>

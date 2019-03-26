@@ -7,7 +7,7 @@
  * and that other 'posts' on your WordPress site will use a
  * different template.
  *
- * @package thebis 
+ * @package asteriski 
  */
 get_header();
 
@@ -55,8 +55,8 @@ endif; ?>
     <ul class="styled-pagination">
 <?php the_posts_pagination(
     array(
-        'prev_text' => esc_html__('&lt;','thebis'),
-        'next_text' => esc_html__('&gt;','thebis')
+        'prev_text' => esc_html__('&lt;','asteriski'),
+        'next_text' => esc_html__('&gt;','asteriski')
     )
 ); ?>
     </ul>

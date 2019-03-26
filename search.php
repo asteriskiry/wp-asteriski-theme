@@ -7,7 +7,7 @@
        * and that other 'posts' on your WordPress site will use a
        * different template.
        *
-       * @package thebis 
+       * @package asteriski 
        */
        get_header();
        
@@ -18,12 +18,12 @@
                 <div class="breadcrumbs d-flex flex-column justify-content-center">
                      <?php if ( have_posts() ) : ?>
                     <h3><?php   /* translators: %s: search term */             
-                         printf( esc_html__( 'Search Results for: %s', 'thebis' ), '<span>' . get_search_query() . '</span>' ); ?>
+                         printf( esc_html__( 'Search Results for: %s', 'asteriski' ), '<span>' . get_search_query() . '</span>' ); ?>
                     </h3>
                     <?php else : ?>
 
                      <h3><?php /* translators: %s: nothing found term */
-                         printf( esc_html__( 'Nothing Found for: %s', 'thebis' ), '<span>' . get_search_query() . '</span>' );  ?>       
+                         printf( esc_html__( 'Nothing Found for: %s', 'asteriski' ), '<span>' . get_search_query() . '</span>' );  ?>       
                      </h3>
                       <?php endif; ?>
                     <div>
@@ -53,8 +53,8 @@
                                 <ul class="styled-pagination">
                                  <?php the_posts_pagination(
                                   array(
-                                 'prev_text' => esc_html__('&lt;','thebis'),
-                                 'next_text' => esc_html__('&gt;','thebis')
+                                 'prev_text' => esc_html__('&lt;','asteriski'),
+                                 'next_text' => esc_html__('&gt;','asteriski')
                                    )
                                    ); ?>
                                 </ul>

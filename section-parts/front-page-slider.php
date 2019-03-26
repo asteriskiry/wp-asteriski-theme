@@ -4,33 +4,33 @@
         *
         * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
         *
-        * @package thebis
+        * @package asteriski
         */
-        $thebis_slider_section     = get_theme_mod( 'thebis_slider_section_hideshow','hide');
-        $thebis_slider_no        = 3;
-        $thebis_slider_pages      = array();
-        for( $i = 1; $i <= $thebis_slider_no; $i++ ) {
-        $thebis_slider_pages[]    =  get_theme_mod( "thebis_slider_page_$i", 1 );
-        $thebis_slider_btntxt[]    =  get_theme_mod( "thebis_slider_btntxt_$i", '' );
-        $thebis_slider_btnurl[]    =  get_theme_mod( "thebis_slider_btnurl_$i", '' );
-        $thebis_slider_btntxt2[]    =  get_theme_mod( "thebis_slider_btntxt2_$i", '' );
-        $thebis_slider_btnurl2[]    =  get_theme_mod( "thebis_slider_btnurl2_$i", '' );
+        $asteriski_slider_section     = get_theme_mod( 'asteriski_slider_section_hideshow','hide');
+        $asteriski_slider_no        = 3;
+        $asteriski_slider_pages      = array();
+        for( $i = 1; $i <= $asteriski_slider_no; $i++ ) {
+        $asteriski_slider_pages[]    =  get_theme_mod( "asteriski_slider_page_$i", 1 );
+        $asteriski_slider_btntxt[]    =  get_theme_mod( "asteriski_slider_btntxt_$i", '' );
+        $asteriski_slider_btnurl[]    =  get_theme_mod( "asteriski_slider_btnurl_$i", '' );
+        $asteriski_slider_btntxt2[]    =  get_theme_mod( "asteriski_slider_btntxt2_$i", '' );
+        $asteriski_slider_btnurl2[]    =  get_theme_mod( "asteriski_slider_btnurl2_$i", '' );
         }
-        $thebis_slider_args  = array(
+        $asteriski_slider_args  = array(
         'post_type' => 'page',
-        'post__in' => array_map( 'absint', $thebis_slider_pages ),
-        'posts_per_page' => absint($thebis_slider_no),
+        'post__in' => array_map( 'absint', $asteriski_slider_pages ),
+        'posts_per_page' => absint($asteriski_slider_no),
         'orderby' => 'post__in'
         ); 
-        $thebis_slider_query = new wp_Query( $thebis_slider_args );
-        if ($thebis_slider_section =='show' && $thebis_slider_query->have_posts() ) { ?>
+        $asteriski_slider_query = new wp_Query( $asteriski_slider_args );
+        if ($asteriski_slider_section =='show' && $asteriski_slider_query->have_posts() ) { ?>
         <section class="hero-header hero-default dark_overlay bg_img" data-section-type="slider_default">
           <div class="swiper-container swiper-hero">
             <div class="swiper-wrapper">
               <?php
                 $count = 0;
-                while($thebis_slider_query->have_posts()) :
-                $thebis_slider_query->the_post();
+                while($asteriski_slider_query->have_posts()) :
+                $asteriski_slider_query->the_post();
                 ?>
               <?php if($count%2==0){ ?>
               <div class="swiper-slide bg_img" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
@@ -41,19 +41,19 @@
                     </h2>
                       <?php the_excerpt(); ?>
                       <?php
-                        if (!empty($thebis_slider_btntxt[$count])) {
+                        if (!empty($asteriski_slider_btntxt[$count])) {
                         ?>
-                      <a href="<?php echo esc_url($thebis_slider_btnurl[$count]); ?>" class="button-default-color hero-btn">
-                        <?php echo esc_html($thebis_slider_btntxt[$count]); ?>
+                      <a href="<?php echo esc_url($asteriski_slider_btnurl[$count]); ?>" class="button-default-color hero-btn">
+                        <?php echo esc_html($asteriski_slider_btntxt[$count]); ?>
                       </a>
                       <?php } ?>
                       <?php
-                        if (!empty($thebis_slider_btntxt2[$count])) {
+                        if (!empty($asteriski_slider_btntxt2[$count])) {
                         ?>
-                      <a href="<?php echo esc_url($thebis_slider_btnurl2[$count]); ?>" class="button-default-white hero-btn">
+                      <a href="<?php echo esc_url($asteriski_slider_btnurl2[$count]); ?>" class="button-default-white hero-btn">
                         <i class="fa fa-th-large">
                         </i>
-                        <?php echo esc_html($thebis_slider_btntxt2[$count]); ?>
+                        <?php echo esc_html($asteriski_slider_btntxt2[$count]); ?>
                       </a>
                       <?php } ?>
                   </div>
@@ -70,19 +70,19 @@
                     </h2>
                       <?php the_content(); ?>
                     <?php
-                    if (!empty($thebis_slider_btntxt[$count])) {
+                    if (!empty($asteriski_slider_btntxt[$count])) {
                     ?>
-                    <a href="<?php echo esc_url($thebis_slider_btnurl[$count]); ?>" class="button-default-color hero-btn">
-                      <?php echo esc_html($thebis_slider_btntxt[$count]); ?>
+                    <a href="<?php echo esc_url($asteriski_slider_btnurl[$count]); ?>" class="button-default-color hero-btn">
+                      <?php echo esc_html($asteriski_slider_btntxt[$count]); ?>
                     </a>
                     <?php } ?>
                     <?php
-                    if (!empty($thebis_slider_btntxt2[$count])) {
+                    if (!empty($asteriski_slider_btntxt2[$count])) {
                     ?>
-                    <a href="<?php echo esc_url($thebis_slider_btnurl2[$count]); ?>" class="button-default-white hero-btn">
+                    <a href="<?php echo esc_url($asteriski_slider_btnurl2[$count]); ?>" class="button-default-white hero-btn">
                       <i class="fa fa-th-large">
                       </i>
-                      <?php echo esc_html($thebis_slider_btntxt2[$count]); ?>
+                      <?php echo esc_html($asteriski_slider_btntxt2[$count]); ?>
                     </a>
                     <?php } ?>
                   </div>
@@ -117,7 +117,7 @@ else
             <div class="container breadcrumbs-wrapper">
                 <div class="breadcrumbs d-flex flex-column justify-content-center">
                      <?php if (is_home() || is_front_page()) { ?>
-                      <h3><?php echo esc_html__('Home', 'thebis') ?></h3>
+                      <h3><?php echo esc_html__('Home', 'asteriski') ?></h3>
                       <?php } ?>
                     <div>
                     </div>

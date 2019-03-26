@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Class Name: thebis_wp_bootstrap_navwalker
+ * Class Name: asteriski_wp_bootstrap_navwalker
  * Plugin Name: WP Bootstrap Navwalker
  * Plugin URI:  https://github.com/wp-bootstrap/wp-bootstrap-navwalker
  * Description: A custom WordPress nav walker class to implement the Bootstrap 4 navigation style in a custom theme using the WordPress built in menu manager.
@@ -15,13 +15,13 @@
 */
 
 /* Check if Class Exists. */
-if ( ! class_exists( 'thebis_wp_bootstrap_navwalker' ) ) {
+if ( ! class_exists( 'asteriski_wp_bootstrap_navwalker' ) ) {
 	/**
-	 * thebis_wp_bootstrap_navwalker class.
+	 * asteriski_wp_bootstrap_navwalker class.
 	 *
 	 * @extends Walker_Nav_Menu
 	 */
-	class thebis_wp_bootstrap_navwalker extends Walker_Nav_Menu {
+	class asteriski_wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 		/**
 		 * Starts the list before the elements are added.
@@ -367,7 +367,7 @@ if ( ! class_exists( 'thebis_wp_bootstrap_navwalker' ) ) {
 				if ( $menu_class ) {
 					$fallback_output .= ' class="' . esc_attr( $menu_class ) . '"'; }
 				$fallback_output .= '>';
-				$fallback_output .= '<li class="menubar"><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="' . esc_attr__( 'Add a menu', 'thebis' ) . '">' . esc_html__( 'Add a menu', 'thebis' ) . '</a></li>';
+				$fallback_output .= '<li class="menubar"><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="' . esc_attr__( 'Add a menu', 'asteriski' ) . '">' . esc_html__( 'Add a menu', 'asteriski' ) . '</a></li>';
 				$fallback_output .= '</ul>';
 				if ( $container ) {
 					$fallback_output .= '</' . esc_attr( $container ) . '>';

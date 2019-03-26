@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section 
  *
- * @package thebis
+ * @package asteriski
  */
 ?>
 
@@ -46,21 +46,21 @@
         'theme_location'    => 'primary', 
         'menu_class'        => 'dropdown', 
         'items_wrap'        => '<ul class="navbar-menu-list">%3$s</ul>',
-        'fallback_cb'       => 'thebis_wp_bootstrap_navwalker::fallback',
-        'walker'            => new thebis_wp_bootstrap_navwalker()
+        'fallback_cb'       => 'asteriski_wp_bootstrap_navwalker::fallback',
+        'walker'            => new asteriski_wp_bootstrap_navwalker()
     )
 ); 
 
-$thebis_header_section = get_theme_mod('thebis_header_section_hideshow' ,'show');
-if ($thebis_header_section =='show') { 
-    $thebis_ctah_btn_text = get_theme_mod('thebis_ctah_btn_text');
-    $thebis_ctah_btn_url=get_theme_mod('thebis_ctah_btn_url');
+$asteriski_header_section = get_theme_mod('asteriski_header_section_hideshow' ,'show');
+if ($asteriski_header_section =='show') { 
+    $asteriski_ctah_btn_text = get_theme_mod('asteriski_ctah_btn_text');
+    $asteriski_ctah_btn_url=get_theme_mod('asteriski_ctah_btn_url');
 
-    if (!empty($thebis_ctah_btn_url)) {
+    if (!empty($asteriski_ctah_btn_url)) {
 ?>
 <div class="navbar-additional align-items-center">
     <div class="qoute-btn">
-        <a href="<?php echo esc_url($thebis_ctah_btn_url); ?>"><?php echo esc_html($thebis_ctah_btn_text); ?></a>
+        <a href="<?php echo esc_url($asteriski_ctah_btn_url); ?>"><?php echo esc_html($asteriski_ctah_btn_text); ?></a>
     </div>
 </div>
 

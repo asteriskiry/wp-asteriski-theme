@@ -2,7 +2,7 @@
     /**
      * The sidebar containing the main widget area.
      *
-     * @package thebis
+     * @package asteriski
      */
 
     dynamic_sidebar('blog-sidebar');

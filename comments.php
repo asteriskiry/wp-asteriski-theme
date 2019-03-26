@@ -6,8 +6,8 @@
 * and the comment form.
 *
 * @package WordPress
-* @subpackage thebis
-* @since thebis 
+* @subpackage asteriski
+* @since asteriski 
 */
 
 /*
@@ -32,7 +32,7 @@
                       $comments_number = get_comments_number();
                       if ( 1 === $comments_number ) {
                         /* translators: %s: post title */
-                        printf( esc_html__( 'One thought on &ldquo;%s&rdquo;','thebis' ), get_the_title() );
+                        printf( esc_html__( 'One thought on &ldquo;%s&rdquo;','asteriski' ), get_the_title() );
                       } else {          
                         printf(
                           esc_html(
@@ -42,7 +42,7 @@
                               '%1$s thoughts on &ldquo;%2$s&rdquo;',
                               $comments_number,
                               'comments title',
-                              'thebis'
+                              'asteriski'
                             )
                           ),
                           esc_html (number_format_i18n( $comments_number ) ),
@@ -67,9 +67,9 @@
                     <?php endif; ?>
  
                 <?php
-                 if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'thebis' ) ) :
+                 if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'asteriski' ) ) :
                   ?>
-                   <p class="no-comments"><?php esc_html__( 'Comments are closed.', 'thebis' ); ?></p> 
+                   <p class="no-comments"><?php esc_html__( 'Comments are closed.', 'asteriski' ); ?></p> 
                   <?php endif; ?>
              
                 </div>    

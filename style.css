@@ -24098,3 +24098,9 @@ form#searchform input[type="submit"] {
 #kurssit-archive {
     margin: 20px 125px 20px 125px;
 }
+
+/* Tablepress */
+
+.tablepress img {
+    max-width: 400px !important;
+}

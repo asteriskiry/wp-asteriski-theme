@@ -23,8 +23,10 @@ if (! function_exists('asteriski_theme_setup')) {
 
         $defaults = array(
             'default-image'          => get_template_directory_uri() .'/assets/img/tausta.jpg',
-            'width'                  => 1920,
-            'height'                 => 540,
+            'width'                  => 0,
+            'height'                 => 0,
+            'flex-height'            => false,
+            'flex-width'             => false,
             'uploads'                => true,
             'default-text-color'     => "#35B233",
             'wp-head-callback'       => 'asteriski_header_style',

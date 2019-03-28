@@ -111,5 +111,27 @@ function asteriski_customize_register($wp_customize)
         'type'     => 'textarea',
         'priority' => 2
     ));
+
+    /* Non-index-page header image */
+
+    $wp_customize->add_section('asteriski_sm_header_image', array(
+        'priority' => 20,
+        'capability' => 'edit_theme_options',
+        'theme_supports' => '',
+        'title' => __('Pienempi otsakekuva', 'asteriski'),
+        'description' => __('Varsinainen otsakekuva näkyy vain etusivulla ja 404-sivulla. Tämä näkyy muilla sivuilla.', 'asteriski')
+    ));
+
+        $wp_customize->add_setting('asteriski_small_header_image', array(
+            'default' => '',
+            'type' => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control( $wp_customize, 'asteriski_small_header_image', array(
+            'label' => 'Pienempi otsakekuva',
+            'settings'  => 'asteriski_small_header_image',
+            'section'   => 'asteriski_sm_header_image'
+        ) ));
 }
 add_action('customize_register', 'asteriski_customize_register');

@@ -21624,7 +21624,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 }
 
 .single-post-section {
-    padding-top: 130px;
+    padding-top: 50px;
 }
 
 @media (max-width: 1199px) {

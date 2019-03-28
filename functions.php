@@ -65,25 +65,26 @@ if (! function_exists('asteriski_theme_setup')) {
 
 function asteriski_header_style()
 {
-    $asteriski_header_text_color = get_header_textcolor(); ?>
-<style type="text/css">
-<?php
-    if (get_header_image()) :
-?>
+    $asteriski_header_text_color = get_header_textcolor();
+    $asteriski_small_header_image = get_theme_mod("asteriski_small_header_image"); ?>
+    <style type="text/css">
+    <?php
+        if (get_header_image()) :
+    ?>
 
-    .blogtitle {
-        color: #<?php echo esc_attr($asteriski_header_text_color); ?>;
-    }
-    .page-header {
-        background-image: url('<?php header_image(); ?>');
-    }
-    .index-page-header {
-        background-image: url('<?php header_image(); ?>');
-    }
+        .blogtitle {
+            color: #<?php echo esc_attr($asteriski_header_text_color); ?>;
+        }
+        .page-header {
+            background-image: url('<?php echo $asteriski_small_header_image ?>');
+        }
+        .index-page-header {
+            background-image: url('<?php header_image(); ?>');
+        }
 
-    <?php endif; ?>	
-</style>
-<?php
+        <?php endif; ?>
+    </style>
+    <?php
 }
 
 /**

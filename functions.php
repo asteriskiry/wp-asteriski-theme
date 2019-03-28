@@ -97,16 +97,16 @@ function asteriski_detect_button()
 }
 
 /**
- * admin JS scripts
+ * Admin CSS stylesheets
  */
 
 function asteriski_admin_enqueue_scripts($hook)
 {
     wp_enqueue_style(
         'font-awesome',
-        get_template_directory_uri() . '/assets/css/font-awesome.css',
+        "https://use.fontawesome.com/releases/v5.8.1/css/all.css",
         array(),
-        '4.7.0',
+        '5.8.1',
         'all'
     );
     wp_enqueue_style(
@@ -132,7 +132,7 @@ if (! function_exists('asteriski_enqueue_styles')) {
     {
 
         wp_enqueue_style('asteriski-font', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Poppins:400,500,600,700,800');
-        wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css');
+        wp_enqueue_style('font-awesome', "https://use.fontawesome.com/releases/v5.8.1/css/all.css");
         wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/css/swiper.css');
         wp_enqueue_style('hover', get_template_directory_uri() . '/assets/css/hover.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/hover.css'));
         wp_enqueue_style('asteriski-style', get_stylesheet_uri());

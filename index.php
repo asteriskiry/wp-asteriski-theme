@@ -20,17 +20,15 @@ get_header();
                         <p>Asteriski ry (*) on vuonna 1972 perustettu Turun Yliopiston tietojenkäsittelytieteiden opiskelijoiden ainejärjestö</p>
                     </div>
                 </div>
-            </div>
-            <h3><?php  ?></h3>
-            <h3><?php wp_title(''); ?></h3>
-            <div>
-
+                <div class="arrowdown">
+                    <a href="#section2"><i class="fas fa-arrow-down"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</header>     
+</header>
 
-<section class="blog-section large-section gray-section">
+<section class="blog-section large-section gray-section" id="section2">
     <div class="container-fluid blog-layout-sidebar-wrapper">
         <div class="row blog-layout-sidebar recent-posts">
             <div class="col-xl-8 col-md-8 col-sm-12">

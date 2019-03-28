@@ -1,36 +1,7 @@
-/*
-[MAIN.js]
+/**
+ * Asteriski WordPress theme main JS
+ */
 
-
-[1] Declaration of functions
- 
-    2   Sizes for flip cards
-    2.1 Swiper
-
-[2] Declaration of variables
-[3] Hero header general
-    1   Constructor
-    1.2 Arrow down link
-    2.4 Hero header swiper default
-    3.1 Hero header init
-
-[4] Navbar general
-    1   Constructor
-    1.1 Mobile test
-    1.2 Mobile menu
-    1.3 Sub menus
-    1.4 Navbar search
-    1.5 Navbar type
-
-[5] Declaration of constants for main classes
-[6] Init main classes
-[7] Images Loaded
-[8] Sizes flip cards init
-[9] Sizes flip cards reinit
-[14] Footer type init
-[21] Swiper init
-[22] 3d-hover for elements init
-*/
 (function() {
     'use strict';
 
@@ -41,11 +12,8 @@
             };
         })();
 
-        /* [1] Declaration of functions */
+        /* Sizes for flip cards */
 
-
-
-        /* (2) Sizes for flip cards */
         function sizes_flip_cards(section) {
             let flip_container = section.find('.flip-container');
             let flip_card_img = flip_container.find('img');
@@ -269,7 +237,7 @@
         // Start for mobile version template
         let mobile_start = 991;
 
-       
+
 
         // Logo light
         let logo_light = jQuery('.logo-light');
@@ -368,7 +336,7 @@
                     case 'slider_default':
                         this._swiper_default_header();
                         break;
-                   
+
                 }
                 this._arrow_down();
             }
@@ -430,7 +398,7 @@
                         sub_menus.removeClass('active-sub-menu-toggle');
                         megamenu.removeClass('active-sub-menu-toggle');
                         mobile_items.removeClass('active-mobile-menu-toggle');
-                    } 
+                    }
                     /* OPTIONAL(DEMO ONLY) START */
                     this.toolbar.removeClass('active_toolbar');
                     this.toolbar_toggle.removeClass('active_toolbar_toggle');
@@ -735,7 +703,7 @@
         NAVIGATION.INIT();
 
         /* [7] Images Loaded */
-       
+
         /* [14] Footer type init */
         footer.addClass(footer_type);
 
@@ -766,3 +734,19 @@
     });
 
 })();
+
+/* Cross-browser smooth scrolling */
+
+jQuery(document).ready(function() {
+    jQuery("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            jQuery('html, body').animate({
+                scrollTop: jQuery(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
+});

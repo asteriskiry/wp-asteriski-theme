@@ -9706,8 +9706,8 @@ a.text-dark:hover, a.text-dark:focus {
     --navbar_height: 80px;
     --navbar_small_height: 60px;
     --hero-header_default_height: 100vh;
-    --hero-header_responsive_height: 100%;
-    --hero-header_small_height: 750px;
+    --hero-header_responsive_height: 100vh;
+    --hero-header_small_height: 100vh;
   /* Overlay rgba Colors */
     --default_overlay: rgba(44, 44, 44, 0.4);
     --color_overlay: rgba(35, 35, 70, 0.25);
@@ -9759,6 +9759,7 @@ a.text-dark:hover, a.text-dark:focus {
 [25] Social icons colors
 [26] Colorful backgrounds
 [27] Page loader
+[28] Asteriski additions
 */
 /* [1] Section sizes */
 .small-section {
@@ -17672,7 +17673,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 
 @media (max-width: 575px) {
     .index-page-header {
-        height: 400px;
+        height: 100vh;
     }
 }
 
@@ -24031,6 +24032,10 @@ form#searchform input[type="submit"] {
     background-color: var(--footer_light);
 }
 
+/**
+ * [28] Asteriski additions
+ */
+
 .navbarlogo {
     height: 38px;
     width: 38px;
@@ -24116,4 +24121,12 @@ form#searchform input[type="submit"] {
 
 .arrowdown a:hover {
     color: var(--green);
+}
+
+/* Hero header text for small screens */
+
+@media (max-width: 460px) {
+    .headertext h1 {
+        font-size: 20px;
+    }
 }

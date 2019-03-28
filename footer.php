@@ -7,10 +7,10 @@
 <footer class="footer-area">
     <div class="container">
         <div class="footer-top">
-            <div class="row clearfix">
+            <div class="row clearfix" data-aos="fade-in" data-aos-delay="100">
                 <?php dynamic_sidebar('asteriski-footer-widget-area'); ?>
 
-                <div class="cooperation">
+                <div class="cooperation" data-aos="fade-in" data-aos-delay="200">
                 <h4 class="widget_title">Yhteistyössä</h4>
                 <?php
                 // Cooperation company logos
@@ -34,7 +34,7 @@ $asteriski_social_icon_url_youtube = get_theme_mod( "asteriski_social_icon_url_y
 $asteriski_social_icon_url_instagram = get_theme_mod( "asteriski_social_icon_url_instagram", '' );
 $asteriski_social_icon_url_github = get_theme_mod( "asteriski_social_icon_url_github", '' );
 ?>
-<div class="footer-inner ">
+<div class="footer-inner">
     <div class="container">
         <div class="footer-social d-flex">
             <?php if ( $asteriski_social_icon_url_facebook ): ?>

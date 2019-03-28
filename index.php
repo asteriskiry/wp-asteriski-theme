@@ -35,12 +35,13 @@ get_header();
 </header>
 
 <section class="blog-section large-section gray-section" id="posts">
-    <div class="container-fluid blog-layout-sidebar-wrapper">
+    <div class="container-fluid blog-layout-sidebar-wrapper" data-aos="fade-in" data-aos-delay="200">
         <div class="row blog-layout-sidebar recent-posts">
             <div class="col-xl-8 col-md-8 col-sm-12">
+                <h3 class="widget-heading">Uusimmat artikkelit</h3>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
-                <article class="blog-card-wrapper ">
+                <article class="blog-card-wrapper" data-aos="fade-in" data-aos-delay="200">
                     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <?php get_template_part('content-parts/content', get_post_format()); ?>
                     </div>
@@ -61,9 +62,8 @@ endif; ?>
 </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-12">
-                <aside class="sidebar">
+                <aside class="sidebar" data-aos="fade-in" data-aos-delay="400">
                     <?php get_sidebar(); ?>
-
                 </aside>
             </div>
         </div>

@@ -9,12 +9,12 @@ Version: 0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Text Domain: asteriski
-Tags: right-sidebar, custom-menu, footer-widgets, theme-options , custom-header, editor-style, featured-images, full-width-template, custom-logo, grid-layout, translation-ready
+Tags: bootstrap, asteriski
 
 Asteriski WordPress Theme © 2019 Asteriski ry
 Asteriski is distributed under the terms of the GNU General Public License v3
 
-Asteriski WordPress theme is based on asteriski
+Asteriski WordPress theme is based on thebis
 */
 
 
@@ -26,7 +26,7 @@ Asteriski WordPress theme is based on asteriski
     --red: #dc3545;
     --orange: #fd7e14;
     --yellow: #ffc107;
-    --green: #28a745;
+    --green: #35B233;
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
@@ -61,7 +61,7 @@ html {
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: transparent;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 
 @-ms-viewport {
@@ -9794,7 +9794,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .large-section {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 @media (max-width: 1199px) {
@@ -14278,7 +14278,7 @@ button:focus, input:focus {
 }
 
 .navbar-fill .navbar-inner .navbar-menu .primary-mobile-menu-toggle:after, .navbar-fade .navbar-inner .navbar-menu .primary-mobile-menu-toggle:after, .navbar-small .navbar-inner .navbar-menu .primary-mobile-menu-toggle:after, .navbar-scroll .navbar-inner .navbar-menu .primary-mobile-menu-toggle:after {
-    color: var(--black_default);
+    color: var(--green);
 }
 
 .navbar-scroll {
@@ -17652,7 +17652,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 }
 
 .logo3d {
-    width: 10%;
+    width: 20%;
     float: left;
     margin-right: 10px 
 }

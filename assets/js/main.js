@@ -744,7 +744,7 @@ jQuery(document).ready(function() {
             event.preventDefault();
             var hash = this.hash;
             jQuery('html, body').animate({
-                scrollTop: jQuery(hash).offset().top
+                scrollTop: jQuery(hash).offset().top - 100
             }, 800, function() {
                 window.location.hash = hash;
             });

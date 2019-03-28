@@ -21,14 +21,14 @@ get_header();
                     </div>
                 </div>
                 <div class="arrowdown">
-                    <a href="#section2"><i class="fas fa-arrow-down"></i></a>
+                    <a href="#posts"><i class="fas fa-arrow-down"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<section class="blog-section large-section gray-section" id="section2">
+<section class="blog-section large-section gray-section" id="posts">
     <div class="container-fluid blog-layout-sidebar-wrapper">
         <div class="row blog-layout-sidebar recent-posts">
             <div class="col-xl-8 col-md-8 col-sm-12">

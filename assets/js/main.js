@@ -751,3 +751,7 @@ jQuery(document).ready(function() {
         }
     });
 });
+
+/* Init AOS */
+
+AOS.init();

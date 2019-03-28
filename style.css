@@ -14359,7 +14359,7 @@ button:focus, input:focus {
 }
 
 .desktop-menu .navbar-inner .navbar-menu .navbar-menu-list li .sub-menu, .desktop-menu .navbar-inner .navbar-menu .navbar-menu-list li .megamenu {
-    background-color: #4A4238;
+    background-color: #272727;
     padding: 10px;
 }
 
@@ -24112,4 +24112,8 @@ form#searchform input[type="submit"] {
 .arrowdown {
     font-size: 50px;
     text-align: center;
+}
+
+.arrowdown a:hover {
+    color: var(--green);
 }

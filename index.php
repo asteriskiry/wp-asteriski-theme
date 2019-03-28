@@ -11,7 +11,7 @@ get_header();
     <div class="container breadcrumbs-wrapper">
         <div class="breadcrumbs d-flex flex-column justify-content-center">
             <div class="container headercontent">
-                <div class="jumbotron headerjumbo">
+                <div class="jumbotron headerjumbo" data-aos="fade-in" data-aos-delay="200">
                     <div class="logo3d">
                         <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/img/3dasteriski.png'; ?>" />
                     </div>
@@ -20,8 +20,8 @@ get_header();
                         <p>Asteriski ry (*) on vuonna 1972 perustettu Turun Yliopiston tietojenkäsittelytieteiden opiskelijoiden ainejärjestö</p>
                     </div>
                 </div>
-                <div class="arrowdown">
-                    <a href="#posts"><i class="fas fa-chevron-circle-down"></i></a>
+                <div class="arrowdown" data-aos="fade-in" data-aos-delay="500">
+                    <a href="#posts"><i class="fas fa-chevron-circle-down hvr-sink"></i></a>
                 </div>
             </div>
         </div>

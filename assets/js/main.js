@@ -27,7 +27,8 @@
             }
         }
 
-        /* (2.1) Swiper */
+        /* Swiper */
+
         function swiper_init() {
             // Swiper team
             let swiper_team = new Swiper('.swiper-team', {
@@ -199,7 +200,7 @@
         }
 
 
-        /* [2] Declaration of variables */
+        /* Declaration of variables */
         // Common constants
         const COMMON = {
             win: window,
@@ -287,9 +288,9 @@
             }
         });
 
-        /* [3] Hero header general */
+        /* Hero header general */
         class HERO {
-            /* (1) Constructor */
+            /* Constructor */
             constructor() {
                 this.canvas = COMMON.doc.getElementById('canvas-hero');
                 this.canvas_header = jQuery('#canvas-parent');
@@ -303,7 +304,7 @@
             }
 
 
-            /* (1.2) Arrow down link */
+            /* Arrow down link */
             _arrow_down() {
                 jQuery(this.angle_down).on("click", () => {
                     let top = this.hero_header.height();
@@ -313,7 +314,7 @@
                 });
             }
 
-            /* (2.4) Hero header swiper default */
+            /* Hero header swiper default */
             _swiper_default_header() {
                 let swiper = new Swiper(this.wrapper_slider, {
                     loop: true,
@@ -330,7 +331,7 @@
                 });
             }
 
-            /* (3.1) Hero header init */
+            /*  Hero header init */
             INIT(hero_type) {
                 switch (hero_type) {
                     case 'slider_default':
@@ -342,9 +343,9 @@
             }
         }
 
-        /* [4] Navbar general */
+        /* Navbar general */
         class NAV {
-            /* (1) Constructor */
+            /* Constructor */
             constructor() {
                 this.root = COMMON.doc.querySelector(':root');
                 this.navbar = jQuery('.navbar');
@@ -367,7 +368,7 @@
                 /* OPTIONAL(DEMO ONLY) END */
             }
 
-            /* (1.1) Mobile test */
+            /* Mobile test */
             _mobile_check() {
                 if (VIEWPORT.w < mobile_point) {
                     this.navbar.addClass('mobile-menu');
@@ -378,7 +379,7 @@
                 }
             }
 
-            /* (1.2) Mobile menu */
+            /* Mobile menu */
             _mobile_menu() {
                 let primary_items = this.menu.find('.menu-primary-item');
                 let mobile_items = this.menu.find('.mobile-menu-toggle');
@@ -406,7 +407,7 @@
                 });
             }
 
-            /* (1.3) Sub menus */
+            /* Sub menus */
             _sub_menus() {
                 let items_has_children = this.menu.find('.menu-item-has-children');
                 let mobile_items = this.menu.find('.mobile-menu-toggle');
@@ -443,7 +444,7 @@
                 }
             }
 
-            /* (1.4) Navbar search */
+            /* Navbar search */
             _navbar_search() {
                 let input = this.navbar_search_form.find('input');
                 let icon_on = this.navbar_search_button.find('.search-icon');
@@ -530,7 +531,7 @@
                 });
             }
 
-            /* (1.5) Navbar type */
+            /* Navbar type */
             _navbar_type() {
                 if (VIEWPORT.w >= mobile_point) {
                     if (jQuery(COMMON.win).scrollTop() >= 100) {
@@ -694,23 +695,23 @@
             }
         }
 
-        /* [5] Declaration of constants for main classes */
+        /* Declaration of constants for main classes */
         const HERO_HEADER = new HERO();
         const NAVIGATION = new NAV();
 
-        /* [6] Init main classes */
+        /* Init main classes */
         HERO_HEADER.INIT(hero_type);
         NAVIGATION.INIT();
 
-        /* [7] Images Loaded */
+        /* Images Loaded */
 
-        /* [14] Footer type init */
+        /* Footer type init */
         footer.addClass(footer_type);
 
-        /* [21] Swiper init */
+        /* Swiper init */
         swiper_init();
 
-        /* [22] 3d-hover for elements init */
+        /* 3d-hover for elements init */
         if (VIEWPORT.w >= mobile_point) {
             if (hover3d.length) {
                 jQuery(hover3d).hover3d({

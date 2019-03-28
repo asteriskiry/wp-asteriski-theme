@@ -3,6 +3,7 @@
  * Template for footer area
  */
 ?>
+
 <footer class="footer-area">
     <div class="container">
         <div class="footer-top">

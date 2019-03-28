@@ -1,7 +1,8 @@
 <?php
 /**
  * Template Name: Error-404
- */ 
+ */
+
 get_header(); ?>
 
 <header class="index-page-header">

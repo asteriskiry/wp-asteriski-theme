@@ -21597,10 +21597,10 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 .comment-respond .form-submit input {
     cursor: pointer;
     padding: 15px 25px;
-    background-color: var(--primary_color);
+    background-color: transparent;
     border: 2px solid var(--primary_color);
     border-radius: 5px;
-    color: #fff;
+    color: var(--primary_color);
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     -webkit-transition: all .3s ease-in-out;
@@ -21608,8 +21608,8 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 }
 
 .comment-respond .form-submit input:hover {
-    color: #35B233;
-    background: transparent;
+    color: #FFF;
+    background: var(--primary_color);
 }
 
 .blog-section .comments-col {

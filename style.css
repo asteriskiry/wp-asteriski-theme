@@ -24184,6 +24184,9 @@ form#searchform input[type="submit"]:hover {
 
 /* Footer cooperation */
 
+.cooperation {
+    margin-top: 20px;
+}
 .company-logo {
     margin: 5px;
     float: left;
@@ -24204,6 +24207,22 @@ form#searchform input[type="submit"]:hover {
     height: auto;
 }
 
+/* Header color of non-index-page */
+
 .page-header h3 {
     color: var(--primary_color);
+}
+
+/* Other stuff widget */
+
+.other a {
+    color: #999;
+}
+
+.other a:hover {
+    color: var(--primary_color);
+}
+
+.otheritem {
+    margin: 5px;
 }

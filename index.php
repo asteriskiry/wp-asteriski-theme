@@ -21,7 +21,7 @@ get_header();
                     </div>
                 </div>
                 <div class="arrowdown">
-                    <a href="#posts"><i class="fas fa-arrow-down"></i></a>
+                    <a href="#posts"><i class="fas fa-chevron-circle-down"></i></a>
                 </div>
             </div>
         </div>

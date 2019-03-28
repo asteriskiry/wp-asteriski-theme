@@ -6,6 +6,7 @@
 function asteriski_customize_register($wp_customize)
 {
     /* Social links */
+
     $wp_customize->add_section('asteriski_social_url_options', array(
         'priority' => 17,
         'capability' => 'edit_theme_options',
@@ -33,6 +34,7 @@ function asteriski_customize_register($wp_customize)
     }
 
     /* Copyright text */
+
     $wp_customize->add_section('asteriski_copyright', array(
         'priority' => 18,
         'capability' => 'edit_theme_options',
@@ -51,5 +53,42 @@ function asteriski_customize_register($wp_customize)
         'type'     => 'textarea',
         'priority' => 2
     ));
+
+    /* Cooperation section */
+
+    $wp_customize->add_section('asteriski_cooperation', array(
+        'priority' => 17,
+        'capability' => 'edit_theme_options',
+        'theme_supports' => '',
+        'title' => __('Yhteistyö', 'asteriski'),
+        'description' => __('Yhteistyössä olevien firmojen logot', 'asteriski')
+    ));
+
+    for ($i = 1; $i < 10; $i++) {
+        $wp_customize->add_setting('asteriski_cooperation_url_' . $i, array(
+            'default' => '',
+            'type' => 'theme_mod',
+            'capability' => 'edit_theme_options',
+            'transport' => 'postMessage',
+            'sanitize_callback' => 'esc_url_raw'
+        ));
+        $wp_customize->add_control('asteriski_cooperation_url_' . $i, array(
+            'label' => 'Firman ' . $i . ' kotisivujen URL',
+            'section' => 'asteriski_cooperation',
+            'settings' => 'asteriski_cooperation_url_' . $i,
+            'type' => 'text'
+        ));
+        $wp_customize->add_setting('asteriski_cooperation_image_' . $i, array(
+            'default' => '',
+            'type' => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control( $wp_customize, 'asteriski_cooperation_image_' . $i, array(
+            'label' => 'Firman ' . $i .' logo',
+            'settings'  => 'asteriski_cooperation_image_' . $i,
+            'section'   => 'asteriski_cooperation'
+        ) ));
+    }
 }
 add_action('customize_register', 'asteriski_customize_register');

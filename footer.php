@@ -9,26 +9,19 @@
         <div class="footer-top">
             <div class="row clearfix">
                 <?php dynamic_sidebar('asteriski-footer-widget-area'); ?>
+
                 <div class="cooperation">
-                    <h4 class="widget_title">Yhteistyössä</h4>
-                    <div class="company-logo">
-                        <a href="#"><img src="https://www.asteriski.fi/wp-content/uploads/2017/09/tek_logo.png"></a>
-                    </div>
-                    <div class="company-logo">
-                        <a href="#"><img src="https://www.asteriski.fi/wp-content/uploads/2018/05/surveypal_RBG-2.png"></a>
-                    </div>
-                    <div class="company-logo">
-                        <a href="#"><img src="https://www.asteriski.fi/wp-content/uploads/2018/09/futurice_logo.png"></a>
-                    </div>
-                    <div class="company-logo">
-                        <a href="#"><img src="https://www.asteriski.fi/wp-content/uploads/2018/09/reaktor_logo_epsBLACK.png"></a>
-                    </div>
-                    <div class="company-logo">
-                        <a href="#"><img src="https://www.asteriski.fi/wp-content/uploads/2018/09/Sofokus-RGB.png"></a>
-                    </div>
-                    <div class="company-logo">
-                        <a href="#"><img src="https://www.asteriski.fi/wp-content/uploads/2018/09/houston_logo.png"></a>
-                    </div>
+                <h4 class="widget_title">Yhteistyössä</h4>
+                <?php
+                // Cooperation company logos
+                for ($i = 1; $i < 10; $i++) {
+                    if ( get_theme_mod( "asteriski_cooperation_url_" . $i ) ) {
+                        echo '<div class="company-logo">';
+                        echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>';
+                        echo '</div>';
+                    }
+                }
+                ?>
                 </div>
             </div>
         </div>

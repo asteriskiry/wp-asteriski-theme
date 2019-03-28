@@ -11,9 +11,6 @@ get_header();
     <div class="container breadcrumbs-wrapper">
         <div class="breadcrumbs d-flex flex-column justify-content-center">
             <h3><?php wp_title(''); ?></h3>
-            <div>
-
-            </div>
         </div>
     </div>
 </header>
@@ -30,21 +27,20 @@ get_header();
                     </div>
                 </article>
                 <?php endwhile; ?>
-<?php else :
-    get_template_part('content-parts/content', 'none');
-endif; ?>
-<div class="d-flex justify-content-center">
-    <ul class="styled-pagination">
-<?php the_posts_pagination(
-    array(
-        'prev_text' => esc_html__('&lt;', 'asteriski'),
-        'next_text' => esc_html__('&gt;', 'asteriski')
-    )
-); ?>
-    </ul>
-</div>
+                <?php else :
+                    get_template_part('content-parts/content', 'none');
+                endif; ?>
+                <div class="d-flex justify-content-center">
+                    <ul class="styled-pagination">
+                <?php the_posts_pagination(
+                    array(
+                        'prev_text' => esc_html__('&lt;', 'asteriski'),
+                        'next_text' => esc_html__('&gt;', 'asteriski')
+                    )
+                ); ?>
+                    </ul>
+                </div>
             </div>
-
             <div class="col-xl-4 col-md-4 col-sm-12">
                 <aside class="sidebar">
                     <?php get_sidebar(); ?>

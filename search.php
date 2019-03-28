@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying all posts
+ * Template for displaying search results
  */
 get_header();
 
@@ -9,19 +9,9 @@ get_header();
     <div class="overlay-dark"></div>
     <div class="container breadcrumbs-wrapper">
         <div class="breadcrumbs d-flex flex-column justify-content-center">
-            <?php if (have_posts()) : ?>
-                    <h3><?php   /* translators: %s: search term */
-                    printf(esc_html__('Search Results for: %s', 'asteriski'), '<span>' . get_search_query() . '</span>'); ?>
-                    </h3>
-                    <?php else : ?>
-
-                     <h3><?php /* translators: %s: nothing found term */
-                     printf(esc_html__('Nothing Found for: %s', 'asteriski'), '<span>' . get_search_query() . '</span>');  ?>
-                     </h3>
-                     <?php endif; ?>
-                     <div>
-
-                     </div>
+            <h3><?php
+printf(esc_html__('Haku:  %s', 'asteriski'), '<span>' . get_search_query() . '</span>'); ?>
+            </h3>
         </div>
     </div>
 </header>
@@ -38,25 +28,23 @@ get_header();
                     </div>
                 </article>
                 <?php endwhile; ?>
-<?php else :
-    get_template_part('content-parts/content', 'none');
-endif; ?>
-<div class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100"
-                                                              data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="800">
-    <ul class="styled-pagination">
-<?php the_posts_pagination(
-    array(
-        'prev_text' => esc_html__('&lt;', 'asteriski'),
-        'next_text' => esc_html__('&gt;', 'asteriski')
-    )
-); ?>
-    </ul>
-</div>
+                <?php else :
+                    get_template_part('content-parts/content', 'none');
+                endif; ?>
+                <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="800">
+                    <ul class="styled-pagination">
+                <?php the_posts_pagination(
+                    array(
+                        'prev_text' => esc_html__('&lt;', 'asteriski'),
+                        'next_text' => esc_html__('&gt;', 'asteriski')
+                    )
+                ); ?>
+                    </ul>
+                </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-12">
                 <aside class="sidebar">
                     <?php get_sidebar(); ?>
-
                 </aside>
             </div>
         </div>

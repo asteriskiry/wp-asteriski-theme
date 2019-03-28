@@ -14,9 +14,6 @@ get_header();
         <div class="breadcrumbs d-flex flex-column justify-content-center">
             <h3><?php  ?></h3>
             <h3><?php wp_title(''); ?></h3>
-            <div>
-
-            </div>
         </div>
     </div>
 </header>
@@ -32,12 +29,12 @@ get_header();
                     <?php the_post_thumbnail(); ?>&nbsp;
                     <?php endif; ?>
                     <?php the_content(); ?>
-<?php
-wp_link_pages( array(
-    'before' => '<div class="page-links">' . esc_html__('Pages: ', 'asteriski' ),
-    'after'  => '</div>',
-) );
-?>
+                    <?php
+                    wp_link_pages( array(
+                        'before' => '<div class="page-links">' . esc_html__('Pages: ', 'asteriski' ),
+                        'after'  => '</div>',
+                    ) );
+                    ?>
                 </div>
             </div>
             <?php endwhile; ?>

@@ -29,12 +29,12 @@ get_header();
                         </div>
                         <?php endif; ?>
                         <?php the_content(); ?>
-<?php
-wp_link_pages( array(
-    'before' => '<div class="page-links">' . esc_html__('Pages: ', 'asteriski' ),
-    'after'  => '</div>',
-) );
-?>
+                        <?php
+                        wp_link_pages( array(
+                            'before' => '<div class="page-links">' . esc_html__('Pages: ', 'asteriski' ),
+                            'after'  => '</div>',
+                        ) );
+                        ?>
                     </div>
                 </div>
                 <?php endwhile; ?>

@@ -33,16 +33,16 @@
                     </div>
                 </a>
                 <div class="navbar-menu">
-<?php wp_nav_menu(
-    array(
-        'container'        => 'ul',
-        'theme_location'    => 'primary',
-        'menu_class'        => 'dropdown',
-        'items_wrap'        => '<ul class="navbar-menu-list">%3$s</ul>',
-        'fallback_cb'       => 'asteriski_wp_bootstrap_navwalker::fallback',
-        'walker'            => new asteriski_wp_bootstrap_navwalker()
-    )
-);
+                <?php wp_nav_menu(
+                    array(
+                        'container'        => 'ul',
+                        'theme_location'    => 'primary',
+                        'menu_class'        => 'dropdown',
+                        'items_wrap'        => '<ul class="navbar-menu-list">%3$s</ul>',
+                        'fallback_cb'       => 'asteriski_wp_bootstrap_navwalker::fallback',
+                        'walker'            => new asteriski_wp_bootstrap_navwalker()
+                    )
+                );
 
 $asteriski_header_section = get_theme_mod('asteriski_header_section_hideshow', 'show');
 if ($asteriski_header_section =='show') {
@@ -60,6 +60,7 @@ if ($asteriski_header_section =='show') {
 <?php
     }
 } ?>
+
 <div class="navbar-search align-items-center justify-content-center">
     <div class="search-input d-flex align-items-center justify-content-center">
         <div class="search-icon">
@@ -73,12 +74,12 @@ if ($asteriski_header_section =='show') {
         <input type="text" name="s" placeholder="Hae tästä">
     </form>
 </div>
-                </div>
-                <button class="hamburger justify-content-center align-items-center hamburger--spin" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-            </div>
-        </nav>
+    </div>
+    <button class="hamburger justify-content-center align-items-center hamburger--spin" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+</div>
+</div>
+</nav>

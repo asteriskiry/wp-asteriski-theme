@@ -14259,7 +14259,7 @@ button:focus, input:focus {
 }
 
 .navbar-fill .navbar-inner .navbar-menu .navbar-search .search-form input, .navbar-fade .navbar-inner .navbar-menu .navbar-search .search-form input, .navbar-small .navbar-inner .navbar-menu .navbar-search .search-form input, .navbar-scroll .navbar-inner .navbar-menu .navbar-search .search-form input {
-    color: rgba(0, 0, 0, 0.9) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .navbar-fill .navbar-inner .navbar-menu .navbar-search .search-form ::-webkit-input-placeholder, .navbar-fade .navbar-inner .navbar-menu .navbar-search .search-form ::-webkit-input-placeholder, .navbar-small .navbar-inner .navbar-menu .navbar-search .search-form ::-webkit-input-placeholder, .navbar-scroll .navbar-inner .navbar-menu .navbar-search .search-form ::-webkit-input-placeholder {
@@ -23853,8 +23853,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
     -o-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     font-family: 'Lato', sans-serif;
-    ;
-  margin-right: 20px;
+    margin-right: 20px;
     padding: 5px 15px;
 }
 
@@ -23889,8 +23888,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
     -o-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     font-family: 'Lato', sans-serif;
-    ;
-  margin-right: 20px;
+    margin-right: 20px;
     padding: 5px 15px;
 }
 
@@ -23948,18 +23946,63 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 }
 
 form#searchform input[type="text"] {
+    display: block;
     width: 75%;
     float: left;
     padding: 5px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+form#searchform input[type="text"]:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #35B233;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(53, 178, 51, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(53, 178, 51, 0.25);
 }
 
 form#searchform input[type="submit"] {
-    width: 25%;
-    color: #fff;
-    padding: 0;
-    position: relative;
-    background: #35B233;
-    border: solid 1px #35B233;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #35B233;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #35B233;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    width: 22%;
+    margin-left: 2%;
+}
+
+form#searchform input[type="submit"]:hover {
+    background-color: #35B233;
+    color: #FFF;
+    text-decoration: none;
 }
 
 .comment-author.vcard img {
@@ -24161,3 +24204,6 @@ form#searchform input[type="submit"] {
     height: auto;
 }
 
+.page-header h3 {
+    color: var(--primary_color);
+}

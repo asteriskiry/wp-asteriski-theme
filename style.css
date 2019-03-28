@@ -23519,7 +23519,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
 }
 
 .footer-area .footer-top {
-    padding: 96px 0px 90px 0px;
+    padding: 90px 0px 90px 0px;
 }
 
 .widget .widget_title {
@@ -24130,3 +24130,34 @@ form#searchform input[type="submit"] {
         font-size: 20px;
     }
 }
+
+/* Footer widgets for small screens */
+
+@media (max-width: 572px) {
+    .footer-widget {
+        padding-top: 20px;
+    }
+}
+
+/* Footer cooperation */
+
+.company-logo {
+    margin: 5px;
+    float: left;
+    width: 200px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.company-logo:hover {
+    -webkit-filter: grayscale(100%);
+}
+
+.company-logo img {
+    width: 100%;
+    height: auto;
+}
+

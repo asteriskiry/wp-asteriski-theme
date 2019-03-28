@@ -8,7 +8,7 @@ function asteriski_customize_register($wp_customize)
     /* Social links */
 
     $wp_customize->add_section('asteriski_social_url_options', array(
-        'priority' => 17,
+        'priority' => 19,
         'capability' => 'edit_theme_options',
         'theme_supports' => '',
         'title' => __('Some ikonit', 'asteriski'),
@@ -90,5 +90,26 @@ function asteriski_customize_register($wp_customize)
             'section'   => 'asteriski_cooperation'
         ) ));
     }
+
+    /* Hero header text */
+
+    $wp_customize->add_section('asteriski_hero_text', array(
+        'priority' => 16,
+        'capability' => 'edit_theme_options',
+        'theme_supports' => '',
+        'title' => __('Etusivun teksti', 'asteriski'),
+        'description' => 'Teksti joka näkyy etusivulla Herossa'
+    ));
+    $wp_customize->add_setting('asteriski_hero_header_text', array(
+        'default'             => '',
+        'type'                => 'theme_mod',
+        'sanitize_callback'   => 'wp_kses_post'
+    ));
+    $wp_customize->add_control('asteriski_hero_header_text', array(
+        'label'    => esc_html__('Etusivun Hero teksti', 'asteriski'),
+        'section'  => 'asteriski_hero_text',
+        'type'     => 'textarea',
+        'priority' => 2
+    ));
 }
 add_action('customize_register', 'asteriski_customize_register');

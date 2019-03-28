@@ -17,7 +17,13 @@ get_header();
                     </div>
                     <div class="headertext">
                         <h1>ASTERISKI RY</h1> 
-                        <p>Asteriski ry (*) on vuonna 1972 perustettu Turun Yliopiston tietojenkäsittelytieteiden opiskelijoiden ainejärjestö</p>
+                        <p>
+                        <?php
+                        if( get_theme_mod('asteriski_hero_header_text') ) : ?>
+                        <p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_hero_header_text'))); ?></p>
+                        <?php else : ?>
+                        <p>Asteriski ry (*) on vuonna 1972 perustettu Turun Yliopiston tietojenkäsittelytieteiden opiskelijoiden ainejärjestö.</p>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="arrowdown" data-aos="fade-in" data-aos-delay="500">

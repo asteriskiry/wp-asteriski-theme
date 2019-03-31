@@ -16,19 +16,19 @@
      <ul class="meta-blog-list">
          <li>
              <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
-                 <i class="far fa-user">
-                 </i><?php echo esc_html__('Kirjoittanut ', 'asteriski'); ?>
+                 <i class="far fa-user icon-green">
+                 </i><?php echo esc_html__(' Kirjoittanut ', 'asteriski'); ?>
                  <?php the_author(); ?>
              </a>
          </li>
          <li>
-             <i class="fas fa-calendar-alt">
+             <i class="fas fa-calendar-alt icon-green">
              </i>
              <?php echo get_the_date(); ?>
          </li>
          &nbsp;
          <li>
-             <i class="fa fa-comment">
+             <i class="fa fa-comment icon-green">
              </i>
              <?php comments_number(__('0 kommenttia', 'asteriski'), __('1 kommentti', 'asteriski'), __('% kommenttia', 'asteriski')); ?>
          </li>

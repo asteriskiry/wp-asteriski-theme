@@ -24226,3 +24226,9 @@ form#searchform input[type="submit"]:hover {
 .otheritem {
     margin: 5px;
 }
+
+/* Font Awesome */
+
+.icon-green {
+    color: var(--primary_color)
+}

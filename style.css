@@ -24305,3 +24305,9 @@ form#searchform input[type="submit"]:hover {
     .navbar-search {
     }
 }
+
+/* Profile Builder */
+
+.alert img {
+    width: 18px;
+}

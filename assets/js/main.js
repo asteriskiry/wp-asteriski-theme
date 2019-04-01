@@ -233,10 +233,10 @@
         let loader = jQuery('.loader');
 
         // Mobile breakpoint
-        let mobile_point = 992;
+        let mobile_point = 1120;
 
         // Start for mobile version template
-        let mobile_start = 991;
+        let mobile_start = 1119;
 
 
 
@@ -411,7 +411,7 @@
             _sub_menus() {
                 let items_has_children = this.menu.find('.menu-item-has-children');
                 let mobile_items = this.menu.find('.mobile-menu-toggle');
-                if (jQuery(COMMON.win).innerWidth() > 992) {
+                if (jQuery(COMMON.win).innerWidth() > 1120) {
                     items_has_children.hover(function() {
                         let sub_menus = jQuery(this).find('.sub-menu');
                         jQuery(sub_menus[0]).toggleClass('active-sub-menu');

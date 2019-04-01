@@ -12,6 +12,7 @@
 
                 <div class="cooperation" data-aos="fade-in" data-aos-delay="200">
                 <h4 class="widget_title">Yhteistyössä</h4>
+                <div class="company-logos">
                 <?php
                 // Cooperation company logos
                 for ($i = 1; $i < 10; $i++) {
@@ -22,6 +23,7 @@
                     }
                 }
                 ?>
+                </div>
                 </div>
             </div>
         </div>

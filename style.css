@@ -24139,6 +24139,15 @@ form#searchform input[type="submit"]:hover {
     margin: 20px 125px 20px 125px;
 }
 
+@media (max-width: 500px) {
+    #pk {
+        margin: 20px 0 20px 0;
+    }
+    .pk-single {
+        margin: 20px 0 20px 0;
+    }
+}
+
 /* Exam archive */
 
 .tentit {
@@ -24147,6 +24156,18 @@ form#searchform input[type="submit"]:hover {
 
 #kurssit-archive {
     margin: 20px 125px 20px 125px;
+}
+
+@media (max-width: 500px) {
+    .tentit {
+        margin: 20px 0 20px 0;
+    }
+    #kurssit-archive {
+        margin: 20px 0 20px 0;
+    }
+    .t-k-buttons {
+        text-align: center;
+    }
 }
 
 /* Tablepress */
@@ -24166,11 +24187,23 @@ form#searchform input[type="submit"]:hover {
     color: var(--green);
 }
 
-/* Hero header text for small screens */
+/* Hero header for small screens */
 
 @media (max-width: 460px) {
     .headertext h1 {
         font-size: 20px;
+    }
+    .headertext {
+        font-size: 10px;
+    }
+    .page-numbers {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-height: 768px) {
+    #posts {
+        margin: 0 !important;
     }
 }
 
@@ -24179,6 +24212,9 @@ form#searchform input[type="submit"]:hover {
 @media (max-width: 572px) {
     .footer-widget {
         padding-top: 20px;
+    }
+    .footer-top {
+        text-align: center;
     }
 }
 
@@ -24207,6 +24243,28 @@ form#searchform input[type="submit"]:hover {
     height: auto;
 }
 
+@media (max-width: 570px) {
+    .cooperation {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (max-width: 450px) {
+    .company-logos {
+        padding-left: 90px;
+    }
+}
+@media (max-width: 402px) {
+    .company-logos {
+        padding-left: 70px;
+    }
+}
+@media (max-width: 350px) {
+    .company-logos {
+        padding-left: 40px;
+    }
+}
+
 /* Header color of non-index-page */
 
 .page-header h3 {
@@ -24231,4 +24289,12 @@ form#searchform input[type="submit"]:hover {
 
 .icon-green {
     color: var(--primary_color)
+}
+
+/* Small screen page-numbers */
+
+@media (max-width: 700px) {
+    .page-numbers {
+        margin-bottom: 10px !important;
+    }
 }

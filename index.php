@@ -11,7 +11,7 @@ get_header();
     <div class="container breadcrumbs-wrapper">
         <div class="breadcrumbs d-flex flex-column justify-content-center">
             <div class="container headercontent">
-                <div class="jumbotron headerjumbo" data-aos="fade-in" data-aos-delay="200">
+                <div class="jumbotron headerjumbo" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="-200">
                     <div class="logo3d">
                         <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/img/3dasteriski.png'; ?>" />
                     </div>
@@ -27,7 +27,7 @@ get_header();
                     </div>
                 </div>
             </div>
-                <div class="arrowdown" data-aos="fade-in" data-aos-delay="500">
+                <div class="arrowdown" data-aos="zoom-in" data-aos-delay="800" data-aos-offset="-200">
                     <a href="#posts"><i class="fas fa-chevron-circle-down hvr-sink"></i></a>
                 </div>
             <div style="margin-top: 200px;" id="posts"></div>
@@ -36,7 +36,7 @@ get_header();
 </header>
 
 <section class="blog-section large-section gray-section">
-    <div class="container-fluid blog-layout-sidebar-wrapper" data-aos="fade-in" data-aos-delay="200">
+    <div class="container-fluid blog-layout-sidebar-wrapper" data-aos="zoom-in" data-aos-delay="200">
         <div class="row blog-layout-sidebar recent-posts">
             <div class="col-xl-8 col-md-8 col-sm-12">
                 <h3 class="widget-heading">Uusimmat artikkelit</h3>

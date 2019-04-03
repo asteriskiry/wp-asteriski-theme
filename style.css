@@ -24394,7 +24394,8 @@ form#searchform input[type="submit"]:hover {
 
 .header-social .social-box {
     padding: 5px;
-    margin-top: -5px;
+    margin-top: -14px;
+    font-size: 1.4rem;
 }
 
 .header-social .social-box a {

@@ -24201,6 +24201,10 @@ form#searchform input[type="submit"]:hover {
     }
     .footer-top {
         text-align: center;
+        padding-top: 30px !important;
+    }
+    .gray-section {
+        padding-bottom: 20px !important;
     }
 }
 

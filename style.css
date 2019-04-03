@@ -45,6 +45,7 @@ Asteriski WordPress theme is based on thebis
     --breakpoint-md: 768px;
     --breakpoint-lg: 1120px;
     --breakpoint-xl: 1200px;
+    --gray-light: #efefef;
 }
 
 *,
@@ -17642,26 +17643,6 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
     margin-left: 10px;
 }
 
-/* Header jumbotron on index page */
-.headerjumbo {
-    background-color: rgba(0, 0, 0, 0.6);
-    margin: 5%;
-}
-
-.headerjumbo h1 {
-    color: #35B233;
-}
-
-.logo3d {
-    width: 20%;
-    float: left;
-    margin-right: 10px;
-}
-
-.headercontent {
-    overflow: auto;
-}
-
 /* Index page header */
 .index-page-header {
     position: relative;
@@ -22976,7 +22957,7 @@ footer .footer-inner .footer-social .social-box:not(:last-child) {
     height: 100%;
     left: 0;
     top: 0;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 /*----------- Service-btn ----------------*/
 .ser-btn {
@@ -24079,6 +24060,8 @@ form#searchform input[type="submit"]:hover {
  * [28] Asteriski additions
  */
 
+/* Navbar */
+
 .navbarlogo {
     height: 38px;
     width: 38px;
@@ -24102,7 +24085,10 @@ form#searchform input[type="submit"]:hover {
 
 .blogdesc {
     display: block;
+    color: var(--gray-light);
 }
+
+/* Riski-info widget */
 
 .riski-info-button {
     width: 25%;
@@ -24223,8 +24209,9 @@ form#searchform input[type="submit"]:hover {
 .cooperation {
     margin-top: 20px;
 }
+
 .company-logo {
-    margin: 5px;
+    margin: 15px;
     float: left;
     width: 200px;
     -webkit-transition: all 1s ease;
@@ -24310,4 +24297,114 @@ form#searchform input[type="submit"]:hover {
 
 .alert img {
     width: 18px;
+}
+
+/* Instagram plugin */
+
+.sbi_load_btn {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #35B233 !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    border: 1px solid #35B233 !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    border-radius: 0.25rem !important;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+}
+
+.sbi_load_btn:hover, .sbi_load_btn:focus {
+    background-color: #35B233 !important;
+    color: #FFF !important;
+    text-decoration: none !important;
+    box-shadow: inset 0 0 20px 20px rgba(255,255,255,0) !important;
+}
+
+.sbi_follow_btn a {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #35B233 !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    border: 1px solid #35B233 !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    border-radius: 0.25rem !important;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+}
+
+.sbi_follow_btn a:hover, .sbi_follow_btn a:focus {
+    background-color: #35B233 !important;
+    color: #FFF !important;
+    text-decoration: none !important;
+    box-shadow: inset 0 0 20px 20px rgba(255,255,255,0) !important;
+}
+
+/* Header jumbotron on index page */
+
+.headerjumbo {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 5%;
+}
+
+.headerjumbo h1 {
+    color: #35B233;
+}
+
+.headerjumbo p {
+    color: var(--gray-light);
+}
+
+.logo3d {
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+}
+
+.headercontent {
+    overflow: auto;
+}
+
+/* Header social icons */
+.header-social {
+    float: right;
+    clear: both;
+}
+
+.header-social .social-box {
+    padding: 5px;
+    margin-top: -5px;
+}
+
+.header-social .social-box a {
+    color: var(--gray-dark);
+}
+
+.header-social .social-box a:hover {
+    color: var(--green);
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
 }

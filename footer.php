@@ -38,51 +38,13 @@ $asteriski_social_icon_url_github = get_theme_mod( "asteriski_social_icon_url_gi
 ?>
 <div class="footer-inner">
     <div class="container">
-        <div class="footer-social d-flex">
-            <?php if ( $asteriski_social_icon_url_facebook ): ?>
-            <div class="social-box">
-                <a href="<?php echo esc_url( $asteriski_social_icon_url_facebook ); ?>">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
-            <?php endif; ?>
-            <?php if ( $asteriski_social_icon_url_twitter ): ?>
-            <div class="social-box">
-                <a href="<?php echo esc_url( $asteriski_social_icon_url_twitter ); ?>">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            <?php endif; ?>
-            <?php if ( $asteriski_social_icon_url_youtube ): ?>
-            <div class="social-box">
-                <a href="<?php echo esc_url( $asteriski_social_icon_url_youtube ); ?>">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-            <?php endif; ?>
-            <?php if ( $asteriski_social_icon_url_instagram ): ?>
-            <div class="social-box">
-                <a href="<?php echo esc_url( $asteriski_social_icon_url_instagram ); ?>">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <?php endif; ?>
-            <?php if ( $asteriski_social_icon_url_github ): ?>
-            <div class="social-box">
-                <a href="<?php echo esc_url( $asteriski_social_icon_url_github ); ?>">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <?php endif; ?>
-        </div>
-
         <div class="footer-copyright">
-<?php
-if( get_theme_mod('asteriski_footer_text') ) : ?>
-<p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_footer_text'))); ?></p>
-<?php else : ?>
-<p>© <?php echo date("Y"); ?> Asteriski ry</p>
-<?php endif; ?>
+        <?php
+        if( get_theme_mod('asteriski_footer_text') ) : ?>
+        <p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_footer_text'))); ?></p>
+        <?php else : ?>
+        <p>© <?php echo date("Y"); ?> Asteriski ry</p>
+        <?php endif; ?>
         </div>
     </div>
 </div>

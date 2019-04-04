@@ -22,7 +22,7 @@ get_header();
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post(); ?>
                 <div class="content-page">
-                    <div class="page-content" data-aos="fade-in" data-aos-delay="100">
+                    <div class="page-content" data-aos="fade-in" data-aos-delay="50">
                         <?php if(has_post_thumbnail()) : ?>
                         <div class="post-thumb-wrapper">
                             <?php the_post_thumbnail(); ?>

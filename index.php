@@ -69,7 +69,7 @@ get_header();
                     </div>
                 </div>
             </div>
-                <div class="arrowdown" data-aos="zoom-in" data-aos-delay="600" data-aos-offset="-200">
+                <div class="arrowdown" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="-200">
                     <a href="#posts"><i class="fas fa-chevron-circle-down hvr-sink"></i></a>
                 </div>
             <div style="margin-top: 200px;" id="posts"></div>
@@ -84,7 +84,7 @@ get_header();
                 <h3 class="widget-heading">Uusimmat artikkelit</h3>
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
-                <article class="blog-card-wrapper" data-aos="fade-in" data-aos-delay="100">
+                <article class="blog-card-wrapper" data-aos="fade-in" data-aos-delay="50">
                     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <?php get_template_part('content-parts/content', get_post_format()); ?>
                     </div>
@@ -105,7 +105,7 @@ get_header();
 </div>
             </div>
             <div class="col-xl-4 col-md-4 col-sm-12">
-                <aside class="sidebar" data-aos="fade-in" data-aos-delay="100">
+                <aside class="sidebar" data-aos="fade-in" data-aos-delay="50">
                     <?php get_sidebar(); ?>
                 </aside>
             </div>

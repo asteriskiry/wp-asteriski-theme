@@ -1,7 +1,13 @@
 # wp-asteriski-theme
-Asteriski WordPress theme. Uses Bootstrap 3 as CSS framework. Based on "thebis" theme.
+Asteriski WordPress theme. Uses Bootstrap 3 as a CSS framework.
 
-Under development. In future theme can be seen in action on <https://asteriski.fi>.
+Can be seen in action on <https://asteriski.fi>.
+
+![alt text](screenshot.png "Screenshot")
+
+Author: Maks Turtiainen
+
+Based on "thebis" theme.
 
 ---
 © Asteriski ry

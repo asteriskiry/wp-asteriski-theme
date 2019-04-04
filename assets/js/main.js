@@ -754,4 +754,7 @@ jQuery(document).ready(function() {
 
 /* Init AOS */
 
-AOS.init();
+AOS.init({
+    delay: 50,
+    once: true,
+});

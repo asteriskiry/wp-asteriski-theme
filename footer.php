@@ -7,10 +7,10 @@
 <footer class="footer-area">
     <div class="container">
         <div class="footer-top">
-            <div class="row clearfix" data-aos="fade-in" data-aos-delay="100">
+            <div class="row clearfix" data-aos="fade-in" data-aos-delay="50">
                 <?php dynamic_sidebar('asteriski-footer-widget-area'); ?>
 
-                <div class="cooperation" data-aos="fade-in" data-aos-delay="200">
+                <div class="cooperation" data-aos="fade-in" data-aos-delay="50">
                 <h4 class="widget_title">Yhteistyössä</h4>
                 <div class="company-logos">
                 <?php
@@ -30,6 +30,7 @@
     </div>
     <div style="clear:both;"></div>
 <?php
+// Social icons transferred to hero header
 $asteriski_social_icon_url_facebook = get_theme_mod( "asteriski_social_icon_url_facebook", '' );
 $asteriski_social_icon_url_twitter = get_theme_mod( "asteriski_social_icon_url_twitter", '' );
 $asteriski_social_icon_url_youtube = get_theme_mod( "asteriski_social_icon_url_youtube", '' );

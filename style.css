@@ -24100,6 +24100,13 @@ form#searchform input[type="submit"]:hover {
     width: 70%;
 }
 
+@media (min-width: 770px) and (max-width: 1110px) {
+    .riski-info-button {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
 /* 404 page */
 
 .page404 {

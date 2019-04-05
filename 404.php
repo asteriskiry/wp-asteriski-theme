@@ -11,7 +11,7 @@ get_header(); ?>
         <div class="breadcrumbs d-flex flex-column justify-content-center">
             <div class="page404">
                 <img class="" src="<?php echo get_template_directory_uri() . '/assets/img/404.png'; ?>" />
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn"><?php echo esc_html__( 'Takaisin etusivulle', 'asteriski' ); ?></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn-yellow"><?php echo esc_html__( 'Takaisin etusivulle', 'asteriski' ); ?></a>
             </div>
         </div>
     </div>

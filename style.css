@@ -46,6 +46,7 @@ Asteriski WordPress theme is based on thebis
     --breakpoint-lg: 1120px;
     --breakpoint-xl: 1200px;
     --gray-light: #efefef;
+    --asteriski-yellow: #FCCB16;
 }
 
 *,
@@ -24122,6 +24123,36 @@ form#searchform input[type="submit"]:hover {
     margin: 20px 125px 20px 125px;
 }
 
+.btn-yellow {
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--asteriski-yellow);
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid var(--asteriski-yellow);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.btn-yellow:hover, .btn-yellow:focus {
+    background-color: var(--asteriski-yellow);
+    color: #000;
+    text-decoration: none;
+}
+
 /* Minutes archive */
 
 #pk {
@@ -24174,15 +24205,14 @@ form#searchform input[type="submit"]:hover {
 .arrowdown {
     font-size: 50px;
     text-align: center;
-    color: #000;
 }
 
 .arrowdown a {
-    color: #000;
+    color: var(--asteriski-yellow);
 }
 
 .arrowdown a:hover {
-    color: var(--green);
+    color: var(--asteriski-yellow);
 }
 
 /* Hero header for small screens */

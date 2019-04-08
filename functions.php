@@ -23,8 +23,8 @@ if (! function_exists('asteriski_theme_setup')) {
 
         $defaults = array(
             'default-image'          => get_template_directory_uri() .'/assets/img/tausta.jpg',
-            'width'                  => 0,
-            'height'                 => 0,
+            'width'                  => 1800,
+            'height'                 => 999,
             'flex-height'            => false,
             'flex-width'             => false,
             'uploads'                => true,

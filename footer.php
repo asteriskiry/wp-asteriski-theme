@@ -10,7 +10,7 @@
             <div class="row clearfix" data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="500">
                 <?php dynamic_sidebar('asteriski-footer-widget-area'); ?>
 
-                <div class="cooperation"  data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="500">
+                <div class="cooperation">
                 <h4 class="widget_title">Yhteistyössä</h4>
                 <div class="company-logos">
                 <?php

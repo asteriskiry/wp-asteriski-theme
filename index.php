@@ -11,7 +11,7 @@ get_header();
     <div class="container breadcrumbs-wrapper">
         <div class="breadcrumbs d-flex flex-column justify-content-center">
             <div class="container headercontent">
-                <div class="jumbotron headerjumbo" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="-200">
+                <div class="jumbotron headerjumbo">
                     <div class="logo3d">
                         <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/img/3dasteriski.png'; ?>" />
                     </div>
@@ -69,7 +69,7 @@ get_header();
                     </div>
                 </div>
             </div>
-                <div class="arrowdown" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="-200">
+                <div class="arrowdown" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="-200">
                     <a href="#posts"><i class="fas fa-chevron-circle-down hvr-sink"></i></a>
                 </div>
             <div style="margin-top: 200px;" id="posts"></div>

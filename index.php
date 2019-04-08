@@ -72,12 +72,11 @@ get_header();
                 <div class="arrowdown" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="-200">
                     <a href="#posts"><i class="fas fa-chevron-circle-down hvr-sink"></i></a>
                 </div>
-            <div style="margin-top: 200px;" id="posts"></div>
         </div>
     </div>
 </header>
 
-<section class="blog-section large-section gray-section">
+<section class="blog-section large-section gray-section" id="posts">
     <div class="container-fluid blog-layout-sidebar-wrapper">
         <div class="row blog-layout-sidebar recent-posts">
             <div class="col-xl-8 col-md-8 col-sm-12">

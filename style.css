@@ -24235,6 +24235,24 @@ form#searchform input[type="submit"]:hover {
     }
 }
 
+@media (max-height: 690px) {
+    .headerjumbo {
+        padding: 2rem !important;
+    }
+    .headerjumbo h1 {
+        font-size: 1.7rem;
+    }
+    .arrowdown {
+        font-size: 30px;
+    }
+}
+
+@media (max-height: 550px) {
+    .headertext p {
+        font-size: 13px !important;
+    }
+}
+
 @media (max-height: 768px) {
     #posts {
         margin: 0 !important;
@@ -24263,7 +24281,7 @@ form#searchform input[type="submit"]:hover {
 }
 
 .company-logo {
-    margin: 15px;
+    margin: 20px;
     float: left;
     width: 200px;
     -webkit-transition: all 1s ease;

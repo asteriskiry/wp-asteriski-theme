@@ -24339,7 +24339,7 @@ form#searchform input[type="submit"]:hover {
 }
 
 .otheritem {
-    margin: 5px;
+    margin: 5px 5px 5px 0;
 }
 
 /* Font Awesome */

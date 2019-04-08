@@ -12,9 +12,6 @@ get_header();
         <div class="breadcrumbs d-flex flex-column justify-content-center">
             <div class="container headercontent">
                 <div class="jumbotron headerjumbo">
-                    <div class="logo3d">
-                        <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/img/3dasteriski.png'; ?>" />
-                    </div>
                     <div class="headertext">
                         <h1>ASTERISKI RY</h1> 
                         <p>

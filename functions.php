@@ -49,6 +49,16 @@ if (! function_exists('asteriski_theme_setup')) {
 
         add_theme_support('customize-selective-refresh-widgets');
 
+        // Add navigation bar
+        function register_my_menus() {
+          register_nav_menus(
+            array(
+              'primary' => __( 'Navigointivalikko' ),
+            )
+          );
+        }
+        add_action( 'init', 'register_my_menus' );
+
         // add excerpt support for pages
         add_post_type_support('page', 'excerpt');
 

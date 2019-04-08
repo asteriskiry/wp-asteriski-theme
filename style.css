@@ -24215,6 +24215,12 @@ form#searchform input[type="submit"]:hover {
     color: var(--asteriski-yellow);
 }
 
+@media (max-width: 450px) {
+    .arrowdown {
+        font-size: 30px;
+    }
+}
+
 /* Hero header for small screens */
 
 @media (max-width: 460px) {
@@ -24301,7 +24307,7 @@ form#searchform input[type="submit"]:hover {
 /* Header color of non-index-page */
 
 .page-header h3 {
-    color: var(--primary_color);
+    color: var(--asteriski-yellow) !important;
 }
 
 /* Other stuff widget */
@@ -24420,6 +24426,12 @@ form#searchform input[type="submit"]:hover {
 
 .headerjumbo p {
     color: var(--gray-light);
+}
+
+@media (min-width: 1100px) {
+    .headerjumbo {
+        margin-top: 15%;
+    }
 }
 
 .logo3d {

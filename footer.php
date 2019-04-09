@@ -12,12 +12,12 @@
 
                 <div class="cooperation">
                 <h4 class="widget_title">Yhteistyössä</h4>
-                <div class="company-logos">
+                <div class="company-logos row">
                 <?php
                 // Cooperation company logos
                 for ($i = 1; $i < 10; $i++) {
                     if ( get_theme_mod( "asteriski_cooperation_url_" . $i ) ) {
-                        echo '<div class="company-logo">';
+                        echo '<div class="col-xs-12 col-sm-4 col-md-3 company-logo">';
                         echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>';
                         echo '</div>';
                     }

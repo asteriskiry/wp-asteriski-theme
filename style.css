@@ -24282,8 +24282,8 @@ form#searchform input[type="submit"]:hover {
 
 .company-logo {
     margin: 20px;
-    float: left;
-    width: 200px;
+    /*float: left;*/
+    /*width: 200px;*/
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -24295,6 +24295,7 @@ form#searchform input[type="submit"]:hover {
     -webkit-filter: grayscale(100%);
 }
 
+/*
 .company-logo img {
     width: 100%;
     height: auto;
@@ -24321,6 +24322,7 @@ form#searchform input[type="submit"]:hover {
         padding-left: 40px;
     }
 }
+*/
 
 /* Header color of non-index-page */
 
@@ -24352,7 +24354,7 @@ form#searchform input[type="submit"]:hover {
 
 @media (max-width: 700px) {
     .page-numbers {
-        margin-bottom: 10px !important;
+        margin-bottom: 15px !important;
     }
 }
 

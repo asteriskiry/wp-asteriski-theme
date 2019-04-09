@@ -24249,7 +24249,7 @@ form#searchform input[type="submit"]:hover {
 
 @media (max-height: 550px) {
     .headertext p {
-        font-size: 13px !important;
+        font-size: 10px !important;
     }
 }
 

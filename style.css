@@ -24335,7 +24335,7 @@ form#searchform input[type="submit"]:hover {
 /* Header color of non-index-page */
 
 .page-header h3 {
-    color: var(--asteriski-yellow) !important;
+    color: #FFF !important;
 }
 
 /* Other stuff widget */

@@ -14907,7 +14907,7 @@ button:focus, input:focus {
 
 /* [2] Navbar */
 .navbar {
-    width: 100%;
+    width: 100vw;
     padding: 0 0 1px 0;
 }
 
@@ -14966,6 +14966,9 @@ button:focus, input:focus {
     order: 3;
 }
 
+.navbar .navbar-inner .navbar-menu .navbar-menu-list .sub-menu li a {
+    padding-top: 5px;
+}
 .navbar .navbar-inner .navbar-menu .navbar-menu-list li a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14980,8 +14983,9 @@ button:focus, input:focus {
     cursor: pointer;
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 1100px) {
     .navbar .navbar-inner .navbar-menu .navbar-menu-list li a {
+        padding-top: 29px;
     }
 }
 

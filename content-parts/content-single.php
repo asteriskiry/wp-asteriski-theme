@@ -14,6 +14,9 @@
          <?php the_title(); ?>
      </h4>
      <ul class="meta-blog-list">
+
+<?php /** Comment out author
+
          <li>
              <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
                  <i class="far fa-user icon-green">
@@ -21,6 +24,7 @@
                  <?php the_author(); ?>
              </a>
          </li>
+ */ ?>
          <li>
              <i class="fas fa-calendar-alt icon-green">
              </i>

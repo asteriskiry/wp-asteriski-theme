@@ -15,12 +15,18 @@
          <?php endif; ?>
      </div>
      <div class="card-blog-body">
+
+<?php /** Comment out author
+
          <span>
              <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" class="blog-by-img"><?php echo get_avatar(get_the_author_meta('user_email'), $size = '140'); ?>
                  <?php echo esc_html__('Kirjoittaja', 'asteriski'); ?>
                  <?php the_author(); ?>
              </a>
          </span>
+
+ */ ?>
+
          <h5>
              <a href="<?php the_permalink() ; ?>">
                  <?php the_title(); ?>

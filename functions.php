@@ -225,3 +225,45 @@ set_post_thumbnail_size( 9999, 400, false );
 @ini_set( 'upload_max_size' , '10M' );
 @ini_set( 'post_max_size', '10M');
 @ini_set( 'max_execution_time', '300' );
+
+/**
+ * Help page
+ */
+
+function register_help_page()
+{
+    add_menu_page(
+        'Ohjeet',
+        'Ohjeet',
+        'publish_posts',
+        'helppage',
+        'help_page_callback',
+        'dashicons-editor-help',
+        110
+    );
+}
+
+add_action( 'admin_menu', 'register_help_page' );
+
+function help_page_callback()
+{
+?>
+<div class="helppage">
+    <h1>Ohjeet sivuston käyttöön</h1>
+    <p>Kirjottelen ohjeet lähiaikoina</p>
+    <p>- Maks</p>
+    <h3>Artikkeleiden kirjoittajille</h3>
+    <h3>Ylläpitäjälle</h3>
+    <h3>WWW-toimikuntalaiselle</h3>
+    <ul>
+        <li><a href="https://github.com/asteriskiry">GitHub-organisaatio</a></li>
+    </ul>
+    <h3>Linkkejä</h3>
+    <ul>
+        <li><a href="https://wordpress.org/support/">WordPressin virallinen dokumentaatio</a></li>
+        <li><a href="https://wordpress.org/support/article/wordpress-editor/">Uuden lohkotyylisen artikkelieditorin käyttöohjeet</a></li>
+        <li><a href="https://wpopas.fi/videot/">Suomenkielisiä video-ohjeita</a></li>
+    </ul>
+</div>
+<?php
+}

@@ -7,7 +7,14 @@
 require_once get_template_directory() . '/customizer.php';
 
 /* Widgets */
+require_once get_template_directory() . '/widgets/join-riski-info-widget.php';
 require_once get_template_directory() . '/widgets/other-widget.php';
+function register_widgets()
+{
+    register_widget('JoinRiskiInfo');
+    register_widget('Other');
+}
+add_action('widgets_init', 'register_widgets');
 
 if (! function_exists('asteriski_theme_setup')) {
     function asteriski_theme_setup()

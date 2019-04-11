@@ -7,7 +7,7 @@
 <footer class="footer-area">
     <div class="container">
         <div class="footer-top">
-            <div class="row clearfix" data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="row clearfix">
                 <?php dynamic_sidebar('asteriski-footer-widget-area'); ?>
 
                 <div class="cooperation">

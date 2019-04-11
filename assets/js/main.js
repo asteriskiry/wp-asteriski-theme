@@ -752,9 +752,6 @@ jQuery(document).ready(function() {
     });
 });
 
-/* Init AOS */
+/* Init wow.js */
 
-AOS.init({
-    delay: 50,
-    once: true,
-});
+new WOW().init();

@@ -15,7 +15,7 @@ function asteriski_customize_register($wp_customize)
         'description' => __('Someprofiilien URL:t. Esim. ', 'asteriski') . 'https://facebook.com/asteriski/'
     ));
 
-    $social_links = array( 'Facebook' => 'facebook', 'Twitter' => 'twitter', 'YouTube' => 'youtube', 'Instagram' => 'instagram', 'GitHub' => 'github' );
+    $social_links = array( 'Facebook' => 'facebook', 'Twitter' => 'twitter', 'YouTube' => 'youtube', 'Instagram' => 'instagram', 'GitHub' => 'github', 'Linkedin' => 'linkedin' );
 
     foreach ($social_links as $key => $val) {
         $wp_customize->add_setting('asteriski_social_icon_url_' . $val, array(

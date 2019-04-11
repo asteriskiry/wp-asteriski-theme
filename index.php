@@ -21,6 +21,7 @@ get_header();
                         $asteriski_social_icon_url_youtube = get_theme_mod( "asteriski_social_icon_url_youtube", '' );
                         $asteriski_social_icon_url_instagram = get_theme_mod( "asteriski_social_icon_url_instagram", '' );
                         $asteriski_social_icon_url_github = get_theme_mod( "asteriski_social_icon_url_github", '' );
+                        $asteriski_social_icon_url_linkedin = get_theme_mod( "asteriski_social_icon_url_linkedin", '' );
                         if( get_theme_mod('asteriski_hero_header_text') ) : ?>
                         <p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_hero_header_text'))); ?></p>
                         <?php else : ?>
@@ -52,6 +53,13 @@ get_header();
                             <div class="social-box">
                                 <a href="<?php echo esc_url( $asteriski_social_icon_url_instagram ); ?>">
                                     <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                            <?php endif; ?>
+                            <?php if ( $asteriski_social_icon_url_linkedin ): ?>
+                            <div class="social-box">
+                                <a href="<?php echo esc_url( $asteriski_social_icon_url_linkedin ); ?>">
+                                    <i class="fab fa-linkedin"></i>
                                 </a>
                             </div>
                             <?php endif; ?>

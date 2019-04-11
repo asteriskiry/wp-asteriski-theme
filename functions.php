@@ -6,6 +6,9 @@
 /* Customizer */
 require_once get_template_directory() . '/customizer.php';
 
+/* Widgets */
+require_once get_template_directory() . '/widgets/other-widget.php';
+
 if (! function_exists('asteriski_theme_setup')) {
     function asteriski_theme_setup()
     {

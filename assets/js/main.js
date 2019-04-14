@@ -284,7 +284,7 @@
             VIEWPORT.w = COMMON.win.innerWidth;
             VIEWPORT.h = COMMON.win.innerHeight;
             if ((page_width >= mobile_point && VIEWPORT.w <= mobile_start) || (page_width <= mobile_start && VIEWPORT.w >= mobile_point)) {
-                location.reload();
+                //location.reload();
             }
         });
 

@@ -27,180 +27,8 @@
             }
         }
 
-        /* Swiper */
-
-        function swiper_init() {
-            // Swiper team
-            let swiper_team = new Swiper('.swiper-team', {
-                loop: true,
-                speed: 500,
-                spaceBetween: 8,
-                slidesPerView: 3,
-                pagination: {
-                    el: '.swiper-pagination-bullets-common',
-                    type: 'bullets',
-                    clickable: true,
-                },
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: true
-                },
-                breakpoints: {
-                    767: {
-                        slidesPerView: 2,
-                    },
-                    450: {
-                        slidesPerView: 1,
-                        spaceBetween: 0
-                    },
-                    0: {
-                        spaceBetween: 0
-                    }
-                }
-            });
-
-            // Swiper testimonials
-            let swiper_testimonials = new Swiper('.swiper-testimonials', {
-                speed: 600,
-                loop: true,
-                effect: 'flip',
-                flipEffect: {
-                    rotate: 30,
-                    slideShadows: false,
-                },
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: true
-                },
-                slidesPerView: 1,
-                pagination: {
-                    el: '.swiper-pagination-bullets-default',
-                    type: 'bullets',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-testimonials',
-                    prevEl: '.swiper-button-prev-testimonials',
-                }
-            });
-            // Swiper testimonials
-            let swiper_testimonials_two = new Swiper('.swiper-testimonials-two', {
-                speed: 600,
-                loop: true,
-
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: true
-                },
-                slidesPerView: 1,
-                pagination: {
-                    el: '.swiper-pagination-bullets-default',
-                    type: 'bullets',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-testimonials',
-                    prevEl: '.swiper-button-prev-testimonials',
-                }
-            });
-            // Swiper testimonials
-            let swiper_testimonials_three = new Swiper('.swiper-testimonials-three', {
-                speed: 600,
-                loop: true,
-
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: true
-                },
-                slidesPerView: 1,
-                pagination: {
-                    el: '.swiper-pagination-bullets-default',
-                    type: 'bullets',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-testimonials',
-                    prevEl: '.swiper-button-prev-testimonials',
-                }
-            });
-            // Swiper portfolio
-            let swiper_portfolio = new Swiper('.swiper-portfolio', {
-                slidesPerView: 4,
-                spaceBetween: 10,
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                },
-                breakpoints: {
-                    1199: {
-                        slidesPerView: 3,
-                    },
-                    767: {
-                        slidesPerView: 2,
-                    },
-                    575: {
-                        slidesPerView: 1,
-                    }
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-portfolio',
-                    prevEl: '.swiper-button-prev-portfolio',
-                }
-            });
-
-            // Swiper clients
-            let swiper_clients = new Swiper('.swiper-clients', {
-                slidesPerView: 4,
-                loop: true,
-                autoplay: {
-                    delay: 2000,
-                },
-                breakpoints: {
-                    1199: {
-                        slidesPerView: 3,
-                    },
-                    767: {
-                        slidesPerView: 2,
-                    },
-                    575: {
-                        slidesPerView: 1,
-                    }
-                }
-            });
-
-            // Swiper default
-            let swiper_default = new Swiper('.swiper-default', {
-                loop: true,
-                autoplay: {
-                    delay: 2000,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-portfolio',
-                    prevEl: '.swiper-button-prev-portfolio',
-                },
-                pagination: {
-                    el: '.swiper-pagination-bullets-common',
-                    type: 'bullets',
-                    clickable: true,
-                },
-            });
-
-            // Swiper post
-            let swiper_post = new Swiper('.swiper-post', {
-                loop: true,
-                autoplay: {
-                    delay: 2000,
-                },
-                pagination: {
-                    el: '.swiper-pagination-bullets-default',
-                    type: 'bullets',
-                    clickable: true,
-                },
-            });
-        }
-
-
         /* Declaration of variables */
+
         // Common constants
         const COMMON = {
             win: window,
@@ -237,8 +65,6 @@
 
         // Start for mobile version template
         let mobile_start = 1119;
-
-
 
         // Logo light
         let logo_light = jQuery('.logo-light');
@@ -311,23 +137,6 @@
                     jQuery('body,html').animate({
                         scrollTop: top
                     }, 1500);
-                });
-            }
-
-            /* Hero header swiper default */
-            _swiper_default_header() {
-                let swiper = new Swiper(this.wrapper_slider, {
-                    loop: true,
-                    speed: 600,
-                    pagination: {
-                        el: '.swiper-pagination-bullets-default',
-                        type: 'bullets',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next-default',
-                        prevEl: '.swiper-button-prev-default',
-                    }
                 });
             }
 
@@ -707,9 +516,6 @@
 
         /* Footer type init */
         footer.addClass(footer_type);
-
-        /* Swiper init */
-        swiper_init();
 
         /* 3d-hover for elements init */
         if (VIEWPORT.w >= mobile_point) {

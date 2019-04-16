@@ -24495,3 +24495,17 @@ form#searchform input[type="submit"]:hover {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
 }
+
+/* Webcam */
+
+.webCam {
+  margin-bottom: 20px;
+}
+
+.viewCam {
+  margin-bottom: 20px;
+}
+
+.hideCam {
+  display: none;
+}

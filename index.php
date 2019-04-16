@@ -6,6 +6,13 @@
 get_header();
 
 ?>
+<script type="text/javascript">
+if (navigator.userAgent.indexOf('Safari') != -1 && 
+    navigator.userAgent.indexOf('Chrome') == -1) {
+        var navbar = document.getElementById('navbar');
+        navbar.setAttribute("style", "position:absolute;");
+    }
+</script>
 <header class="index-page-header">
     <div class="overlay-dark"></div>
     <div class="container breadcrumbs-wrapper">

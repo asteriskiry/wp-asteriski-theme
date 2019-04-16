@@ -17,7 +17,7 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <nav class="navbar navbar-default desktop-menu logo-left header-type-one">
+        <nav id="navbar" class="navbar navbar-default desktop-menu logo-left header-type-one">
             <div class="container-fluid navbar-inner">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="logo-link d-flex align-items-center">
                     <div class="navbarlogo">
@@ -80,6 +80,5 @@ if ($asteriski_header_section =='show') {
             <span class="hamburger-inner"></span>
         </span>
     </button>
-</div>
 </div>
 </nav>

@@ -93,7 +93,7 @@ function asteriski_header_style()
     ?>
 
         .blogtitle {
-            color: #<?php echo esc_attr($asteriski_header_text_color); ?>;
+            color: <?php echo esc_attr($asteriski_header_text_color); ?>;
         }
         .page-header {
             background-image: url('<?php echo $asteriski_small_header_image ?>');

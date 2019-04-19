@@ -36,8 +36,8 @@
         <li><strong>Päätoimittaja/Editor</strong> - Pystyy julkaisemaan artikkeleita ja muokkaamaan muitten artikkeleita.</li>
         <li><strong>Kirjoittaja/Author</strong> - Pystyy julkaisemaan artikkeleita.</li>
         <li><strong>Avustaja/Contributor</strong> - Pystyy lähettämään artikkeleita arvioitavaksi.</li>
-        <li><strong>Tenttiarkistokäyttäjä</strong> - Custom rooli. Tämän roolin rekisteröityneet käyttäjät saavat. Pystyy lukemaan ja kommentoida kirjoituksia, muokata omaa profiiliaan sekä lähettää tenttejä arvioitavaksi.</li>
-        <li><strong>Tilaaja/Subscriber</strong> - Pystyy lukemaan ja kommentoida kirjoituksia ja muokata omaa profiiliaan.</li>
+        <li><strong>Tenttiarkistokäyttäjä</strong> - Custom rooli. Tämän roolin rekisteröityneet käyttäjät saavat. Pystyy lukemaan ja kommentoimaan kirjoituksia, muokkaamaan omaa profiiliaan sekä lähettämään tenttejä arvioitavaksi.</li>
+        <li><strong>Tilaaja/Subscriber</strong> - Pystyy lukemaan ja kommentoimaan kirjoituksia ja muokkaamaan omaa profiiliaan.</li>
 </ul>
 <p><a href="http://aiheet.domnik.net/wordpress-ohjeet/kayttajatasot.shtml">Tässä</a> vielä täysi suomenkielinen kuvaus rooleista. Pääkäyttäjä-roolin omaavat pystyvät tuhoamaan koko sivuston täysin, joten se tulisi olla vain harvoilla (Palvelinvastaava, jotkin www-toimikuntalaiset, PJ?). Sopiva rooli henkilöille joiden tarvitsee pystyä julkaisemaan artikkeleita on "Kirjoittaja" (Hallituslaiset, toimihenkilöt). Sivuston kannalta enemmän vastuullisille henkilöille "Päätoimittaja"-rooli (PJ, VPJ, Tiedotusvastaava, Opintomateriaalivastaava). Uusille WWW-toimikuntalaisille "Kirjoittaja"-rooli ja ylennetään tarpeen mukaan. "Avustaja"-roolia voi käyttää joissain tapauksissa (esim. Digitin hallituslaiselle). "Tilaaja" rooli on melko turha.</p>
     <h4>Hallituksen vaihtuminen</h4>

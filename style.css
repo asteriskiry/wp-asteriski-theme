@@ -24477,6 +24477,7 @@ form#searchform input[type="submit"]:hover {
 }
 
 /* Header social icons */
+
 .header-social {
     float: right;
     clear: both;
@@ -24512,4 +24513,96 @@ form#searchform input[type="submit"]:hover {
 
 .hideCam {
   display: none;
+}
+
+/* Hide reCAPTCHA badge */
+
+.grecaptcha-badge { 
+  visibility: hidden;
+}
+
+/* Feedback forms */
+
+.wpcf7-submit {
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #35B233;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #35B233;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.wpcf7-submit:hover, .wpcf7-submit:focus {
+    background-color: #35B233;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.wpcf7-text {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+
+.wpcf7-text:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #35B233;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(53, 178, 51, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(53, 178, 51, 0.25);
+}
+
+.wpcf7-textarea {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+
+.wpcf7-textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #35B233;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(53, 178, 51, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(53, 178, 51, 0.25);
 }

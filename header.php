@@ -7,16 +7,13 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
-        <meta charset="<?php bloginfo('charset'); ?>" />
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php wp_head(); ?>
-        <?php if (is_singular() && pings_open(get_queried_object())) : ?>
-        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-        <?php endif; ?>
     </head>
 
-    <body <?php body_class(); ?>>
+    <body>
         <nav id="navbar" class="navbar navbar-default desktop-menu logo-left header-type-one">
             <div class="container-fluid navbar-inner">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="logo-link d-flex align-items-center">

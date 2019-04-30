@@ -7,7 +7,7 @@ get_header();
 
 ?>
 <script type="text/javascript">
-if (navigator.userAgent.indexOf('Safari') != -1 && 
+if (navigator.userAgent.indexOf('Safari') != -1 &&
     navigator.userAgent.indexOf('Chrome') == -1) {
         var navbar = document.getElementById('navbar');
         navbar.setAttribute("style", "position:absolute;");
@@ -20,7 +20,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 &&
             <div class="container headercontent">
                 <div class="jumbotron headerjumbo">
                     <div class="headertext">
-                        <h1>ASTERISKI RY</h1> 
+                        <h1>ASTERISKI RY</h1>
                         <p>
                         <?php
                         $asteriski_social_icon_url_facebook = get_theme_mod( "asteriski_social_icon_url_facebook", '' );

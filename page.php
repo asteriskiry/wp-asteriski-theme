@@ -42,7 +42,6 @@ get_header();
             </div>
         </div>
     </div>
-    <?php get_template_part( 'section-parts/front-page-callout' ); ?>
 <?php
 if ( comments_open() || get_comments_number() ) :
     comments_template();

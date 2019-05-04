@@ -6,26 +6,6 @@
     'use strict';
 
     jQuery(document).ready(function(jQuery) {
-        window.requestAnimationFrame = (function() {
-            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
-                return window.setTimeout(callback, 1000 / 60);
-            };
-        })();
-
-        /* Sizes for flip cards */
-
-        function sizes_flip_cards(section) {
-            let flip_container = section.find('.flip-container');
-            let flip_card_img = flip_container.find('img');
-            let flip_front = flip_container.find('.front');
-            let flip_back = flip_container.find('.back');
-            for (let i = 0; i < flip_container.length; i++) {
-                let height_img = jQuery(flip_card_img[i]).innerHeight();
-                jQuery(flip_container[i]).css('height', height_img);
-                jQuery(flip_front[i]).css('height', height_img);
-                jQuery(flip_back[i]).css('height', height_img);
-            }
-        }
 
         /* Declaration of variables */
 
@@ -75,17 +55,8 @@
         // Navbar type
         let navbar_type = 'navbar-fill';
 
-        // Footer type
-        let footer_type = 'footer-light';
-
         // Logo position
         let logo_position = 'logo-left';
-
-        // Flip cards section
-        let flip_section = jQuery('.flip-section');
-
-        // Google map wrapper
-        let map = jQuery('#map');
 
         // Progress bar
         let progress_bar = '.progress-bar-skill';
@@ -93,17 +64,8 @@
         // Progress bar test variable
         let progress_check = true;
 
-        // Contact form
-        let form = jQuery('#ajax-contact');
-
         // Wrapper for 3d-hover elements
         let hover3d = jQuery('.hover3d-wrapper');
-
-        // Isotope button group
-        let button_group = jQuery('.button-group-default');
-
-        // Hero header type
-        let hero_type = hero_header.data('section-type');
 
         // Viewport sizes reinit
         jQuery(COMMON.win).resize(function() {
@@ -113,44 +75,6 @@
                 location.reload();
             }
         });
-
-        /* Hero header general */
-        class HERO {
-            /* Constructor */
-            constructor() {
-                this.canvas = COMMON.doc.getElementById('canvas-hero');
-                this.canvas_header = jQuery('#canvas-parent');
-                this.canvas_width = COMMON.win.innerWidth;
-                this.canvas_height = this.canvas_header.height();
-                this.particles_wrapper = 'canvas-parent';
-                this.angle_down = jQuery('.angle-down');
-                this.hero_header = jQuery('.hero-header');
-                this.youtube_wrapper = this.hero_header.find('.hero-video');
-                this.wrapper_slider = '.swiper-hero';
-            }
-
-
-            /* Arrow down link */
-            _arrow_down() {
-                jQuery(this.angle_down).on("click", () => {
-                    let top = this.hero_header.height();
-                    jQuery('body,html').animate({
-                        scrollTop: top
-                    }, 1500);
-                });
-            }
-
-            /*  Hero header init */
-            INIT(hero_type) {
-                switch (hero_type) {
-                    case 'slider_default':
-                        this._swiper_default_header();
-                        break;
-
-                }
-                this._arrow_down();
-            }
-        }
 
         /* Navbar general */
         class NAV {
@@ -165,16 +89,6 @@
                 this.navbar_search_form = jQuery('.search-form');
                 this.navbar_search_button = jQuery('.search-input');
                 this.social_side = jQuery('.navbar-additional');
-                /* OPTIONAL(DEMO ONLY) START */
-                this.toolbar = jQuery('.toolbar');
-                this.toolbar_toggle = jQuery('.toolbar-toggle');
-                this.navbar_type = jQuery('.header-type');
-                this.footer_type = jQuery('.footer__type');
-                this.hamburger_type = jQuery('.hamburger__type');
-                this.logo_position = jQuery('.logo-position');
-                this.color_theme_option = jQuery('.color_scheme');
-                this.footer = jQuery('footer');
-                /* OPTIONAL(DEMO ONLY) END */
             }
 
             /* Mobile test */
@@ -209,10 +123,6 @@
                         megamenu.removeClass('active-sub-menu-toggle');
                         mobile_items.removeClass('active-mobile-menu-toggle');
                     }
-                    /* OPTIONAL(DEMO ONLY) START */
-                    this.toolbar.removeClass('active_toolbar');
-                    this.toolbar_toggle.removeClass('active_toolbar_toggle');
-                    /* OPTIONAL(DEMO ONLY) END */
                 });
             }
 
@@ -265,15 +175,6 @@
                 }
 
                 this.navbar_search_button.on('click', () => {
-
-                    /* OPTIONAL(DEMO ONLY) START */
-                    this.social_side.css({
-                        'transition': 'all .3s ease-in-out'
-                    });
-                    this.navbar_search.css({
-                        'transition': 'all .3s ease-in-out'
-                    });
-                    /* OPTIONAL(DEMO ONLY) END */
 
                     input.toggleClass('active-form');
                     icon_on.toggleClass('icon-off');
@@ -363,125 +264,6 @@
                 }
             }
 
-            /* OPTIONAL(DEMO ONLY) START */
-            _toolbar() {
-                this.toolbar_toggle.on('click', () => {
-                    this.toolbar.toggleClass('active_toolbar');
-                    this.toolbar_toggle.toggleClass('active_toolbar_toggle');
-                });
-
-            }
-
-            _btn_toggle(parent) {
-                let btn = parent.find('.option_btn');
-                btn.on('click', function() {
-                    btn.removeClass('option_btn_active');
-                    btn.addClass('option_btn_off');
-                    jQuery(this).toggleClass('option_btn_off');
-                    jQuery(this).toggleClass('option_btn_active');
-                });
-            }
-
-            _btn_small_toggle(parent) {
-                let btn = parent.find('.option_btn_small');
-                btn.on('click', function() {
-                    btn.removeClass('option_btn_small_active');
-                    btn.addClass('option_btn_small_off');
-                    jQuery(this).toggleClass('option_btn_small_off');
-                    jQuery(this).toggleClass('option_btn_small_active');
-                });
-            }
-
-            _header_type_option() {
-                this._btn_toggle(this.navbar_type);
-                let btn = this.navbar_type.find('.option_btn');
-                let navbar = this.navbar;
-                btn.on('click', function() {
-                    navbar_type = jQuery(this).data('header-type');
-                    navbar.removeClass('navbar-fill navbar-fade navbar-small navbar-scroll');
-                });
-                btn.on('click', () => {
-                    this._navbar_type();
-                });
-            }
-
-            _logo_position_option() {
-                this._btn_toggle(this.logo_position);
-                let btn = this.logo_position.find('.option_btn');
-                let navbar = this.navbar;
-                let social = this.social_side;
-                let navbar_search = this.navbar_search;
-                let input = this.navbar_search_form.find('input');
-                let icon_on = this.navbar_search_button.find('.search-icon');
-                let icon_off = this.navbar_search_button.find('.search-times');
-                btn.on('click', function() {
-                    input.removeClass('active-form');
-                    icon_on.removeClass('icon-off');
-                    icon_off.removeClass('times-active');
-                    navbar.removeClass('navbar-additional-disable');
-                    input.css({
-                        'width': '0',
-                        'margin-left': '0',
-                        'margin-right': '0',
-                    });
-                    navbar_search.css({
-                        'transform': 'translateX(0px)'
-                    });
-                    social.css({
-                        'transition': 'none'
-                    });
-                    navbar_search.css({
-                        'transition': 'none'
-                    });
-                    logo_position = jQuery(this).data('logo-position');
-                    navbar.removeClass('logo-left logo-right');
-                    navbar.addClass(logo_position);
-                });
-            }
-
-            _footer_type_option() {
-                this._btn_toggle(this.footer_type);
-                let btn = this.footer_type.find('.option_btn');
-                let footer = this.footer;
-                btn.on('click', function() {
-                    let footer_type = jQuery(this).data('footer-type');
-                    footer.removeClass('footer-light footer-dark');
-                    jQuery(footer).addClass(footer_type);
-                });
-            }
-
-            _hamburger_type() {
-                this._btn_small_toggle(this.hamburger_type);
-                let btn = this.hamburger_type.find('.option_btn_small');
-                let toggle = this.navbar_toggle;
-                btn.on('click', function() {
-                    let type = jQuery(this).data('hamburger');
-                    toggle.removeClass();
-                    toggle.addClass('hamburger justify-content-center align-items-center');
-                    toggle.addClass(type);
-                });
-            }
-
-            _color_scheme() {
-                let color_button = this.color_theme_option.find('div');
-                let root = this.root;
-                for (let i = 0; i < color_button.length; i++) {
-                    let bg_button = jQuery(color_button[i]).data('color-scheme');
-                    jQuery(color_button[i]).css({
-                        'background-color': bg_button
-                    });
-                }
-                color_button.on('click', function() {
-                    color_scheme_color = jQuery(this).data('color-scheme');
-                    root.style.setProperty('--primary_color', color_scheme_color);
-                    let svg = jQuery('.skills-wrapper svg');
-                    let path = jQuery(svg).find('path:eq(-1)');
-                    path.attr('stroke', color_scheme_color);
-                });
-            }
-
-            /* OPTIONAL(DEMO ONLY) END */
-
             /* Navbar init */
             INIT() {
                 this.navbar.addClass(logo_position);
@@ -493,51 +275,14 @@
                 this._mobile_menu();
                 this._sub_menus();
                 this._navbar_search();
-                /* OPTIONAL(DEMO ONLY) START */
-                this._toolbar();
-                this._color_scheme();
-                this._logo_position_option();
-                this._header_type_option();
-                this._footer_type_option();
-                this._hamburger_type();
-                /* OPTIONAL(DEMO ONLY) END */
             }
         }
 
         /* Declaration of constants for main classes */
-        const HERO_HEADER = new HERO();
         const NAVIGATION = new NAV();
 
         /* Init main classes */
-        HERO_HEADER.INIT(hero_type);
         NAVIGATION.INIT();
-
-        /* Images Loaded */
-
-        /* Footer type init */
-        footer.addClass(footer_type);
-
-        /* 3d-hover for elements init */
-        if (VIEWPORT.w >= mobile_point) {
-            if (hover3d.length) {
-                jQuery(hover3d).hover3d({
-                    selector: ".hover3d-child"
-                });
-            }
-        }
-        //DEMO
-        jQuery(".anchor-link").on("click", function(event) {
-            event.preventDefault();
-
-            let id = jQuery(this).attr('href'),
-
-                top = jQuery(id).offset().top;
-
-            jQuery('body,html').animate({
-                scrollTop: top
-            }, 1500);
-        });
-
     });
 
 })();

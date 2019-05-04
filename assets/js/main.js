@@ -544,4 +544,4 @@
 
 /* Init wow.js */
 
-new WOW().init();
+//new WOW().init();

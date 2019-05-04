@@ -134,7 +134,7 @@ if (! function_exists('asteriski_enqueue_styles')) {
 if (! function_exists('asteriski_enqueue_scripts')) {
     function asteriski_enqueue_scripts()
     {
-        wp_enqueue_script('asteriski-main', get_template_directory_uri() . '/assets/js/main.js', array(), '', true);
+        wp_enqueue_script('asteriski-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '', true);
     }
     add_action('wp_enqueue_scripts', 'asteriski_enqueue_scripts');
 }

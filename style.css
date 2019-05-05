@@ -24237,13 +24237,19 @@ form#searchform input[type="submit"]:hover {
 
 @media (max-width: 460px) {
     .headertext h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
     .headertext {
-        font-size: 10px;
+        font-size: 11px;
     }
     .page-numbers {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 335px) {
+    .headertext {
+        font-size: 10px;
     }
 }
 
@@ -24252,7 +24258,7 @@ form#searchform input[type="submit"]:hover {
         padding: 2rem !important;
     }
     .headerjumbo h1 {
-        font-size: 1.7rem;
+        font-size: 15px;
     }
     .arrowdown {
         font-size: 30px;
@@ -24261,7 +24267,7 @@ form#searchform input[type="submit"]:hover {
 
 @media (max-height: 550px) {
     .headertext p {
-        font-size: 10px !important;
+        font-size: 11px !important;
     }
 }
 

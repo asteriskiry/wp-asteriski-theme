@@ -15082,10 +15082,9 @@ button:focus, input:focus {
     font-weight: 900;
     content: '\f107';
     font-family: "Font Awesome 5 Free";
-    font-size: 13px;
+    font-size: 12px;
     display: block;
     margin-left: 10px;
-    margin-top: 1px;
     opacity: 0.9;
 }
 

@@ -133,10 +133,10 @@
                 if (jQuery(COMMON.win).innerWidth() > 1120) {
                     items_has_children.hover(function() {
                         let sub_menus = jQuery(this).find('.sub-menu');
-                        jQuery(sub_menus[0]).toggleClass('active-sub-menu');
+                        jQuery(sub_menus[0]).addClass('active-sub-menu');
                     }, function() {
                         let sub_menus = jQuery(this).find('.sub-menu');
-                        jQuery(sub_menus[0]).toggleClass('active-sub-menu');
+                        jQuery(sub_menus[0]).removeClass('active-sub-menu');
                     });
                 } else {
                     mobile_items.on('click', function() {

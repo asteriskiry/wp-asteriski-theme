@@ -9,7 +9,8 @@ get_header();
 ?>
 <header>
 </header>
-<section class="white-section blog-section single-post-section" style="background-color: #111; min-height: 100%;">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
+<section class="white-section blog-section single-post-section" style="background-color: #111; min-height: 100%; font-family: 'Fira Code', monospace;">
 <style>
 html {
     height: 100%;

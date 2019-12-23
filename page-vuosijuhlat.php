@@ -21,6 +21,14 @@ body {
 footer {
     display: none;
 }
+a {
+    color: #00ff66;
+    text-decoration: underline;
+}
+a:hover {
+    color: #00ff66;
+    text-decoration: underline;
+}
 </style>
     <div>
         <div class="row">

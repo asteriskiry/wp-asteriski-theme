@@ -21,16 +21,16 @@ body {
 footer {
     display: none;
 }
-a {
+.vuosijuhlat-content a {
     color: #00ff66;
     text-decoration: underline;
 }
-a:hover {
+.vuosijuhlat-content a:hover {
     color: #00ff66;
     text-decoration: underline;
 }
 </style>
-    <div>
+    <div class="vuosijuhlat-content">
         <div class="row">
             <div class="col single-post-wrapper">
                 <?php if(have_posts()) : ?>

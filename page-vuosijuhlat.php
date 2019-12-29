@@ -73,7 +73,7 @@ footer {
   );
   color: white;
   font: 1.3rem ohsnap;
-  padding-top: 8rem;
+  padding-top: 140px;
   text-shadow: 0 0 5px #C8C8C8;
       animation: textShadow 1.6s infinite;
 }

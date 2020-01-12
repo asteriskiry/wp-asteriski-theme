@@ -16,6 +16,10 @@ get_header();
    font-family: bigblue;
    src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/bigblue.ttf');
 }
+@font-face {
+   font-family: ohsnap;
+   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/ohsnap.ttf');
+}
 html {
     height: 100%;
 }
@@ -71,6 +75,7 @@ pre {
 }
 .typewriter {
   border-right: .35em solid #7FFF00; /* The typwriter cursor */
+  font: 1.3rem ohsnap;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em; /* Adjust as needed */
   color: #7FFF00;

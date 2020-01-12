@@ -13,40 +13,8 @@ get_header();
 <section class="white-section blog-section single-post-section vuosi" style="min-height: 100%;">
 <style>
 @font-face {
-   font-family: pixel;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/pixel.ttf');
-}
-@font-face {
    font-family: bigblue;
    src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/bigblue.ttf');
-}
-@font-face {
-   font-family: hvd;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/hvd.ttf');
-}
-@font-face {
-   font-family: ohsnap;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/ohsnap.ttf');
-}
-@font-face {
-   font-family: profont;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/profont.ttf');
-}
-@font-face {
-   font-family: proggy;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/proggy.ttf');
-}
-@font-face {
-   font-family: retro;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/retro.ttf');
-}
-@font-face {
-   font-family: shure;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/shure.ttf');
-}
-@font-face {
-   font-family: terminess;
-   src: url('/wp-content/themes/wp-asteriski-theme/assets/fonts/terminess.ttf');
 }
 html {
     height: 100%;
@@ -58,12 +26,12 @@ footer {
     display: none;
 }
 .vuosijuhlat-content a {
-    color: #00ff66;
-    font: 1.3rem ohsnap;
+    color: #7FFF00;
+    font: 1.3rem bigblue;
     text-decoration: underline;
 }
 .vuosijuhlat-content a:hover {
-    color: #00ff66;
+    color: #7FFF00;
     text-decoration: underline;
 }
 .vuosi {
@@ -72,7 +40,7 @@ footer {
     rgba(0, 80, 0, 0.75), black 120%
   );
   color: white;
-  font: 1.3rem ohsnap;
+  font: 1.3rem bigblue;
   padding-top: 140px;
   text-shadow: 0 0 5px #C8C8C8;
       animation: textShadow 1.6s infinite;
@@ -102,10 +70,10 @@ pre {
   margin: 0;
 }
 .typewriter {
-  border-right: .35em solid #00ff2b; /* The typwriter cursor */
+  border-right: .35em solid #7FFF00; /* The typwriter cursor */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em; /* Adjust as needed */
-  color: #00ff2b;
+  color: #7FFF00;
   font-size: 30px;
   animation: 
     blink-caret .75s step-end infinite;

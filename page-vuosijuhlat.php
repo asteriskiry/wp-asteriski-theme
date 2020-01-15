@@ -74,10 +74,11 @@ pre {
   margin: 0;
 }
 .typewriter {
-  border-right: .35em solid #7FFF00; /* The typwriter cursor */
+  border-right: .35em solid #7FFF00;
   font: 1.3rem ohsnap;
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
+  margin: 0 auto;
+  padding-bottom: 20px;
+  letter-spacing: .05em;
   color: #7FFF00;
   font-size: 30px;
   animation: 

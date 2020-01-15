@@ -77,7 +77,7 @@ pre {
   border-right: .35em solid #7FFF00;
   font: 1.3rem ohsnap;
   margin: 0 auto;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   letter-spacing: .05em;
   color: #7FFF00;
   font-size: 30px;

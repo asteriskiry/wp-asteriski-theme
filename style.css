@@ -24298,6 +24298,17 @@ form#searchform input[type="submit"]:hover {
     margin-top: 20px;
 }
 
+@media (max-width: 520px) {
+  .main-company {
+    width: 95%;
+  }
+}
+@media (min-width: 521px) {
+  .main-company {
+    width: 80%;
+  }
+}
+
 .company-logo {
     margin: 20px;
     /*float: left;*/

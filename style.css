@@ -24309,6 +24309,11 @@ form#searchform input[type="submit"]:hover {
   }
 }
 
+.main-company {
+  margin: 5px;
+  margin-bottom: 80px;
+}
+
 .company-logo {
     margin: 20px;
     /*float: left;*/

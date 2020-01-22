@@ -57,14 +57,39 @@ function asteriski_customize_register($wp_customize)
     /* Cooperation section */
 
     $wp_customize->add_section('asteriski_cooperation', array(
-        'priority' => 17,
+        'priority' => 16,
         'capability' => 'edit_theme_options',
         'theme_supports' => '',
         'title' => __('Yhteistyö', 'asteriski'),
         'description' => __('Yhteistyössä olevien firmojen logot', 'asteriski')
     ));
 
-    for ($i = 1; $i < 10; $i++) {
+    $wp_customize->add_setting('asteriski_cooperation_url_main', array(
+        'default' => '',
+        'type' => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'postMessage',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
+    $wp_customize->add_control('asteriski_cooperation_url_main', array(
+        'label' => 'Pääyhteistyökumppanin kotisivujen URL',
+        'section' => 'asteriski_cooperation',
+        'settings' => 'asteriski_cooperation_url_main',
+        'type' => 'text'
+    ));
+    $wp_customize->add_setting('asteriski_cooperation_image_main', array(
+        'default' => '',
+        'type' => 'theme_mod',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control( $wp_customize, 'asteriski_cooperation_image_main', array(
+            'label' => 'Pääyhteistyökumppanin logo',
+            'settings'  => 'asteriski_cooperation_image_main',
+            'section'   => 'asteriski_cooperation'
+        ) ));
+
+    for ($i = 1; $i < 13; $i++) {
         $wp_customize->add_setting('asteriski_cooperation_url_' . $i, array(
             'default' => '',
             'type' => 'theme_mod',

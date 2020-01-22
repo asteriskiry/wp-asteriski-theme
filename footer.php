@@ -11,11 +11,18 @@
                 <?php dynamic_sidebar('asteriski-footer-widget-area'); ?>
 
                 <div class="cooperation">
+
+                <?php  // Cooperation company logos ?>
+
                 <h4 class="widget_title">Yhteistyössä</h4>
                 <div class="company-logos row">
                 <?php
-                // Cooperation company logos
-                for ($i = 1; $i < 10; $i++) {
+                if ( get_theme_mod( "asteriski_cooperation_url_main" ) ) {
+                    echo '<div class="col-xs-12 col-sm-12 col-md-12 company-logo">';
+                    echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_main" )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_main" ) . '"></a>';
+                    echo '</div>';
+                }
+                for ($i = 1; $i < 13; $i++) {
                     if ( get_theme_mod( "asteriski_cooperation_url_" . $i ) ) {
                         echo '<div class="col-xs-12 col-sm-4 col-md-3 company-logo">';
                         echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>';

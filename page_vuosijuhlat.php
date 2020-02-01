@@ -1,6 +1,7 @@
 
 <?php
 /**
+ * Template Name: Vuosijuhlat
  * The template for Asteriski 48v annual celebration page
  */
 

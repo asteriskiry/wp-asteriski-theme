@@ -34,6 +34,7 @@
                 ?>
                 </div>
                 </div>
+                <a style="margin: auto; margin-top: 30px;" href="/yhteistyo">Yhteistyöhön Asteriskin kanssa?</a>
             </div>
         </div>
     </div>

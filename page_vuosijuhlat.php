@@ -224,7 +224,7 @@ pre {
 }
 
 </style>
-    <div class="vuosijuhlat-content">
+    <div class="vuosijuhlat-content container">
         <div class="row">
             <div class="col single-post-wrapper">
                 <?php if(have_posts()) : ?>
@@ -254,8 +254,8 @@ pre {
 </section>
 <script>
 var i = 0;
-var txt = '[riski@vujut] $'; /* The text */
-var speed = 30; /* The speed/duration of the effect in milliseconds */
+var txt = '[riski@vujut] $';
+var speed = 30;
 
 function typeWriter() {
   if (i < txt.length) {

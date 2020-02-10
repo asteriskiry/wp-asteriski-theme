@@ -24315,18 +24315,9 @@ form#searchform input[type="submit"]:hover {
 }
 
 .company-logo {
-    margin: 20px;
+    margin: 30px;
     /*float: left;*/
     /*width: 200px;*/
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.company-logo:hover {
-    -webkit-filter: grayscale(100%);
 }
 
 /*

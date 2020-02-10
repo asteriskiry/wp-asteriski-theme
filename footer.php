@@ -17,6 +17,7 @@
 
                 <h4 class="widget_title">Yhteistyössä</h4>
                 <?php
+                // Main partner
                 if ( get_theme_mod( "asteriski_cooperation_url_main" ) ) {
                     echo '<div style="text-align: center;" class="main-company">';
                     echo '<p>Pääyhteistyökumppani</p>';
@@ -24,12 +25,22 @@
                     echo '</div>';
                 }
                 echo '<div class="company-logos row">';
+
+                // Create companies array and randomize it
+                $companies = [];
                 for ($i = 1; $i < 13; $i++) {
                     if ( get_theme_mod( "asteriski_cooperation_url_" . $i ) ) {
-                        echo '<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 company-logo">';
-                        echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>';
-                        echo '</div>';
+                        $companies[] = '
+                        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 company-logo">
+                        <a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>
+                        </div>';
                     }
+                }
+                shuffle($companies);
+
+                // Echo companies array
+                foreach ($companies as $company) {
+                    echo $company;
                 }
                 ?>
                 </div>

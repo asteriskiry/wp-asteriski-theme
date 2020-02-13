@@ -248,6 +248,34 @@ pre {
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <p class="typewriter" id="typewriter"style="width: 300px;"></p>
+
+                <p style="margin: auto; width: 300px; margin-top: 50px; color: #7FFF00; font: 1.8rem bigblue;">Yhteistyössä</p>
+                <div class="company-logos row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://houston-inc.com/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/houston.png"></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://arado.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/arado.png"></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://reaktor.com/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/reaktor.png"></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://sofokus.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/sofokus.png"></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://solita.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/solita.png"></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://tek.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/tek.png"></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://vstky.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vstky.png"></a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                    <a href="https://tivia.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/tivia.png"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

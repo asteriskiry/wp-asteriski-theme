@@ -255,7 +255,7 @@ pre {
                         <a href="https://houston-inc.com/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/houston.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
-                        <a href="https://arado.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/arado.png"></a>
+                        <a href="https://anders.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/anders.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
                         <a href="https://reaktor.com/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/reaktor.png"></a>
@@ -267,16 +267,16 @@ pre {
                         <a href="https://solita.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/solita.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
-                        <a href="https://tek.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/tek.png"></a>
+                        <a href="https://arado.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/arado.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
-                        <a href="https://vstky.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vstky.png"></a>
+                        <a href="https://tek.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/tek.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
                         <a href="https://tivia.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/tivia.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
-                        <a href="https://anders.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/anders.png"></a>
+                        <a href="https://vstky.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vstky.png"></a>
                     </div>
                 </div>
             </div>

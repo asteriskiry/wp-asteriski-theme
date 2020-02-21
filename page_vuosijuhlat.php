@@ -278,6 +278,9 @@ pre {
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
                         <a href="https://vstky.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vstky.png"></a>
                     </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
+                        <a href="https://vincit.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vincit.png"></a>
+                    </div>
                 </div>
             </div>
         </div>

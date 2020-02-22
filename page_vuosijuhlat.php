@@ -241,6 +241,28 @@ pre {
        text-shadow: none !important;
 }
 
+<?php
+if ( is_user_logged_in() ) {
+?>
+@media only screen and (max-width: 1120px) {
+    .switch {
+        position: fixed;
+        top: 102px;
+        left: 20px;
+        z-index: 999;
+    }
+}
+@media only screen and (min-width: 1121px) {
+    .switch {
+        position: fixed;
+        top: 122px;
+        left: 20px;
+        z-index: 999;
+    }
+}
+<?php
+} else {
+?>
 @media only screen and (max-width: 1120px) {
     .switch {
         position: fixed;
@@ -257,6 +279,11 @@ pre {
         z-index: 999;
     }
 }
+
+<?php
+}
+?>
+
 
 .onoffswitch {
     position: relative; width: 72px;

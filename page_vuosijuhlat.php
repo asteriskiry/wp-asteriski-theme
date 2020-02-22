@@ -11,7 +11,7 @@ get_header();
 <header>
 </header>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
-<section class="white-section blog-section single-post-section vuosi" style="min-height: 100%;">
+<section class="white-section blog-section single-post-section vuosi" style="min-height: 100%;" id="vuosi">
 <style>
 @font-face {
    font-family: bigblue;
@@ -56,7 +56,7 @@ footer {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: repeating-linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.15),
@@ -223,8 +223,100 @@ pre {
   50% { border-color: #00ff2b; }
 }
 
+.notransition  {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+   animation: none !important;
+       text-shadow: none !important;
+}
+
+.notransition::after  {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+   animation: none !important;
+       text-shadow: none !important;
+}
+
+@media only screen and (max-width: 1120px) {
+    .switch {
+        position: fixed;
+        top: 62px;
+        left: 20px;
+        z-index: 999;
+    }
+}
+@media only screen and (min-width: 1121px) {
+    .switch {
+        position: fixed;
+        top: 82px;
+        left: 20px;
+        z-index: 999;
+    }
+}
+
+.onoffswitch {
+    position: relative; width: 72px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #525252; border-radius: 10px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 21px; padding: 0; line-height: 21px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #000000; color: #00FF2B;
+    text-shadow: 2px green;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #000000; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 11px; margin: 5px;
+    background: #949494;
+    position: absolute; top: 0; bottom: 0;
+    right: 47px;
+    border: 2px solid #525252; border-radius: 10px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #00FF2B; 
+    box-shadow: 0px 0px 5px #00FF2B;
+}
 </style>
     <div class="vuosijuhlat-content container">
+        <div class="switch">
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="effects" checked onclick="toggleAnimations()">
+            <label class="onoffswitch-label" for="effects">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+        </div>
         <div class="row">
             <div class="col single-post-wrapper">
                 <?php if(have_posts()) : ?>
@@ -276,10 +368,10 @@ pre {
                         <a href="https://tivia.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/tivia.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
-                        <a href="https://vstky.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vstky.png"></a>
+                        <a href="https://vincit.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vincit.png"></a>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 company-logo">
-                        <a href="https://vincit.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vincit.png"></a>
+                        <a href="https://vstky.fi/"><img src="/wp-content/themes/wp-asteriski-theme/vujulogot/vstky.png"></a>
                     </div>
                 </div>
             </div>
@@ -299,5 +391,15 @@ function typeWriter() {
   }
 }
 typeWriter()
+
+function toggleAnimations() {
+  var checkBox = document.getElementById("effects");
+  var mainContainer = document.getElementById("vuosi");
+  if (checkBox.checked == true){
+    mainContainer.classList.remove('notransition');
+  } else {
+    mainContainer.classList.add('notransition');
+  }
+}
 </script>
 <?php get_footer(); ?>

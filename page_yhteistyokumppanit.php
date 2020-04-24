@@ -20,6 +20,7 @@ get_header();
     <div class="container">
         <?php the_excerpt() ?>
                 <div class="cooperation">
+                    <h3 class="text-center">Asteriski ry:n yhteistyökumppanit <?php echo date("Y") ?></h3>
                 <?php
                 echo '<div class="company-logos row">';
 
@@ -47,6 +48,7 @@ get_header();
                 </div>
         <div class="row">
             <div class="col-xl-12 col-md-12 col-sm-12 single-post-wrapper">
+                <h3 class="text-center">Yritysesittelyt</h3>
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post(); ?>
                 <div class="content-page">

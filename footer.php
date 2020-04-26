@@ -21,7 +21,7 @@
                 if ( get_theme_mod( "asteriski_cooperation_url_main" ) ) {
                     echo '<div style="text-align: center;" class="main-company">';
                     echo '<p>Pääyhteistyökumppani</p>';
-                    echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_main" )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_main" ) . '"></a>';
+                    echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_main" )) . '" target="_blank"><img src="' . get_theme_mod( "asteriski_cooperation_image_main" ) . '"></a>';
                     echo '</div>';
                 }
                 echo '<div class="company-logos row">';
@@ -32,7 +32,7 @@
                     if ( get_theme_mod( "asteriski_cooperation_url_" . $i ) ) {
                         $companies[] = '
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 company-logo">
-                        <a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>
+                        <a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '" target="_blank"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>
                         </div>';
                     }
                 }

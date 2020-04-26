@@ -30,14 +30,14 @@ get_header();
                     if ( get_theme_mod( "asteriski_cooperation_url_" . $i ) ) {
                         $companies[] = '
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 company-logo">
-                        <a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>
+                        <a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_" . $i )) . '" target="_blank"><img src="' . get_theme_mod( "asteriski_cooperation_image_" . $i ) . '"></a>
                         </div>';
                     }
                 }
                 shuffle($companies);
                 array_unshift($companies, '
                 <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 company-logo">
-                    <a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_main" )) . '"><img src="' . get_theme_mod( "asteriski_cooperation_image_main" ) . '"></a>
+                    <a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_main" )) . '" target="_blank"><img src="' . get_theme_mod( "asteriski_cooperation_image_main" ) . '"></a>
                 </div>');
 
                 // Echo companies array

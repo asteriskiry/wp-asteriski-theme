@@ -20,7 +20,6 @@
                 // Main partner
                 if ( get_theme_mod( "asteriski_cooperation_url_main" ) ) {
                     echo '<div style="text-align: center;" class="main-company">';
-                    echo '<p>Pääyhteistyökumppani</p>';
                     echo '<a href="' . esc_url(get_theme_mod( "asteriski_cooperation_url_main" )) . '" target="_blank"><img src="' . get_theme_mod( "asteriski_cooperation_image_main" ) . '"></a>';
                     echo '</div>';
                 }

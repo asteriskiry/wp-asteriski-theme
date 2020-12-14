@@ -14028,6 +14028,9 @@ ul li {
     list-style-position: inside;
 }
 
+.navbar-menu ul li {
+    list-style: none;
+}                                                                                                
 a:hover {
     text-decoration: none;
 }

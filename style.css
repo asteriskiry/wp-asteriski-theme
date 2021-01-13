@@ -24213,8 +24213,13 @@ form#searchform input[type="submit"]:hover {
 /* Tablepress */
 
 .tablepress img {
-    max-width: 400px !important;
+    width: 200px !important;
 }
+
+.vanhat-hallitukset-wrapper .column-2 {
+    width: 30% !important;
+}
+
 
 /* Hero header arrow */
 

@@ -27,7 +27,7 @@
 
                 // Create companies array and randomize it
                 $companies = [];
-                for ($i = 1; $i < 13; $i++) {
+                for ($i = 1; $i < 16; $i++) {
                     if ( get_theme_mod( "asteriski_cooperation_url_" . $i ) ) {
                         $companies[] = '
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 company-logo">

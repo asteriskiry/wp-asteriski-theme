@@ -14,10 +14,9 @@ if (navigator.userAgent.indexOf('Safari') != -1 &&
     }
 </script>
 <header>
-    <div class="banner-image">
-        <div class="hero-text">
-            <h1>ASTERISKI RY</h1>
-        </div>
+    <div class="banner-image"></div>
+    <div class="hero-text">
+        <h1>ASTERISKI RY</h1>
     </div>
     <div class="text-banner"></div>
     <div class="text_container">

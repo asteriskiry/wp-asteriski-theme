@@ -13,78 +13,79 @@ if (navigator.userAgent.indexOf('Safari') != -1 &&
         navbar.setAttribute("style", "position:absolute;");
     }
 </script>
-<header class="index-page-header">
-    <div class="overlay-dark"></div>
-    <div class="container breadcrumbs-wrapper">
-        <div class="breadcrumbs d-flex flex-column justify-content-center">
-            <div class="container headercontent">
-                <div class="jumbotron headerjumbo">
-                    <div class="headertext">
-                        <h1>ASTERISKI RY</h1>
-                        <p>
-                        <?php
-                        $asteriski_social_icon_url_facebook = get_theme_mod( "asteriski_social_icon_url_facebook", '' );
-                        $asteriski_social_icon_url_twitter = get_theme_mod( "asteriski_social_icon_url_twitter", '' );
-                        $asteriski_social_icon_url_youtube = get_theme_mod( "asteriski_social_icon_url_youtube", '' );
-                        $asteriski_social_icon_url_instagram = get_theme_mod( "asteriski_social_icon_url_instagram", '' );
-                        $asteriski_social_icon_url_github = get_theme_mod( "asteriski_social_icon_url_github", '' );
-                        $asteriski_social_icon_url_linkedin = get_theme_mod( "asteriski_social_icon_url_linkedin", '' );
-                        if( get_theme_mod('asteriski_hero_header_text') ) : ?>
-                        <p><?php echo wp_kses_post( html_entity_decode(get_theme_mod('asteriski_hero_header_text'))); ?></p>
-                        <?php else : ?>
-                        <p>Asteriski ry (*) on vuonna 1972 perustettu Turun Yliopiston tietojenkäsittelytieteiden opiskelijoiden ainejärjestö.</p>
-                        <?php endif; ?>
-                        <div class="header-social d-flex">
-                            <?php if ( $asteriski_social_icon_url_facebook ): ?>
-                            <div class="social-box">
-                                <a href="<?php echo esc_url( $asteriski_social_icon_url_facebook ); ?>">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </div>
-                            <?php endif; ?>
-                            <?php if ( $asteriski_social_icon_url_twitter ): ?>
-                            <div class="social-box">
-                                <a href="<?php echo esc_url( $asteriski_social_icon_url_twitter ); ?>">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
-                            <?php endif; ?>
-                            <?php if ( $asteriski_social_icon_url_youtube ): ?>
-                            <div class="social-box">
-                                <a href="<?php echo esc_url( $asteriski_social_icon_url_youtube ); ?>">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                            <?php endif; ?>
-                            <?php if ( $asteriski_social_icon_url_instagram ): ?>
-                            <div class="social-box">
-                                <a href="<?php echo esc_url( $asteriski_social_icon_url_instagram ); ?>">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                            <?php endif; ?>
-                            <?php if ( $asteriski_social_icon_url_linkedin ): ?>
-                            <div class="social-box">
-                                <a href="<?php echo esc_url( $asteriski_social_icon_url_linkedin ); ?>">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                            <?php endif; ?>
-                            <?php if ( $asteriski_social_icon_url_github ): ?>
-                            <div class="social-box">
-                                <a href="<?php echo esc_url( $asteriski_social_icon_url_github ); ?>">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <div class="arrowdown wow zoomIn">
-                    <a href="#posts"><i class="fas fa-chevron-circle-down hvr-sink"></i></a>
-                </div>
+<header>
+    <div class="banner-image">
+        <div class="hero-text">
+            <h1>ASTERISKI RY</h1>
         </div>
+    </div>
+    <div class="text-banner"></div>
+    <div class="text_container">
+        <div class="headertext">
+            <h2 class="text-banner-h2">Mikä?</h2>
+            <p>
+                <?php
+                $asteriski_social_icon_url_facebook = get_theme_mod("asteriski_social_icon_url_facebook", '');
+                $asteriski_social_icon_url_twitter = get_theme_mod("asteriski_social_icon_url_twitter", '');
+                $asteriski_social_icon_url_youtube = get_theme_mod("asteriski_social_icon_url_youtube", '');
+                $asteriski_social_icon_url_instagram = get_theme_mod("asteriski_social_icon_url_instagram", '');
+                $asteriski_social_icon_url_github = get_theme_mod("asteriski_social_icon_url_github", '');
+                $asteriski_social_icon_url_linkedin = get_theme_mod("asteriski_social_icon_url_linkedin", '');
+                if (get_theme_mod('asteriski_hero_header_text')) : ?>
+            <p><?php echo wp_kses_post(html_entity_decode(get_theme_mod('asteriski_hero_header_text'))); ?></p>
+            <?php else : ?>
+                <p>Asteriski ry (*) on vuonna 1972 perustettu Turun Yliopiston tietojenkäsittelytieteiden
+                    opiskelijoiden ainejärjestö.</p>
+            <?php endif; ?>
+            <div class="header-social d-flex">
+                <?php if ($asteriski_social_icon_url_facebook): ?>
+                    <div class="social-box">
+                        <a href="<?php echo esc_url($asteriski_social_icon_url_facebook); ?>">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <?php if ($asteriski_social_icon_url_twitter): ?>
+                    <div class="social-box">
+                        <a href="<?php echo esc_url($asteriski_social_icon_url_twitter); ?>">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <?php if ($asteriski_social_icon_url_youtube): ?>
+                    <div class="social-box">
+                        <a href="<?php echo esc_url($asteriski_social_icon_url_youtube); ?>">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <?php if ($asteriski_social_icon_url_instagram): ?>
+                    <div class="social-box">
+                        <a href="<?php echo esc_url($asteriski_social_icon_url_instagram); ?>">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <?php if ($asteriski_social_icon_url_linkedin): ?>
+                    <div class="social-box">
+                        <a href="<?php echo esc_url($asteriski_social_icon_url_linkedin); ?>">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <?php if ($asteriski_social_icon_url_github): ?>
+                    <div class="social-box">
+                        <a href="<?php echo esc_url($asteriski_social_icon_url_github); ?>">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    <div class="custom-container"></div>
+    <div class="arrowdown arrow-index wow zoomIn">
+        <a href="#posts"><i class="fas fa-chevron-circle-down hvr-sink"></i></a>
     </div>
 </header>
 

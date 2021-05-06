@@ -89,7 +89,7 @@ function asteriski_customize_register($wp_customize)
             'section'   => 'asteriski_cooperation'
         ) ));
 
-    for ($i = 1; $i < 16; $i++) {
+    for ($i = 1; $i < 20; $i++) {
         $wp_customize->add_setting('asteriski_cooperation_url_' . $i, array(
             'default' => '',
             'type' => 'theme_mod',

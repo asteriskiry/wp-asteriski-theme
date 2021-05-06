@@ -91,7 +91,7 @@ function asteriski_header_style()
         .page-header {
             background-image: url('<?php echo $asteriski_small_header_image ?>');
         }
-        .index-page-header {
+        .banner-image {
             background-image: url('<?php header_image(); ?>');
         }
 

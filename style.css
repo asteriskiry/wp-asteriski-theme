@@ -24629,6 +24629,7 @@ form#searchform input[type="submit"]:hover {
     filter: brightness(0.65);
     background-repeat: no-repeat;
     position: relative;
+    background-position: center;
 }
 .text-banner{
     clip-path: polygon(0 100%, 100% 100%, 100% 67%, 64% 86%, 34% 66%, 0 85%);

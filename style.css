@@ -14459,7 +14459,7 @@ button:focus, input:focus {
     right: 0;
     background-color: rgba(0, 0, 0, 0.95);
     display: none;
-    overflow-y: scroll !important;
+    overflow-y: auto !important;
 }
 
 .mobile-menu .navbar-inner .navbar-menu .navbar-menu-list {
@@ -24236,12 +24236,6 @@ form#searchform input[type="submit"]:hover {
     color: var(--asteriski-yellow);
 }
 
-@media (max-width: 450px) {
-    .arrowdown {
-        font-size: 30px;
-    }
-}
-
 /* Hero header for small screens */
 
 @media (max-width: 460px) {
@@ -24621,29 +24615,30 @@ form#searchform input[type="submit"]:hover {
 }
 
 /*Roosan lisäämiä*/
-.banner-image{
-    clip-path: polygon(0 0, 100% 0, 100% 67%, 64% 86%, 34% 66%, 0 85%);
+header{
+    background-color: #f8f8f8;
+}
+.banner-image {
     width: 100%;
     height: 550px;
     background-size: cover;
-    filter: brightness(0.65);
+    filter: brightness(.75);
     background-repeat: no-repeat;
     position: relative;
-    background-position: center;
 }
-.text-banner{
-    clip-path: polygon(0 100%, 100% 100%, 100% 67%, 64% 86%, 34% 66%, 0 85%);
+.text-banner {
+    clip-path: polygon(0px 103.27%, 100% 100%, 100% 77.73%, 50% 90%, 50% 90%, 0px 79.91%);
     width: 100%;
-    height: 550px;
-    background-color: #f0d358;
+    height: 600px;
+    background-color: #FCCB16;
     margin-top: -551px;
     position: relative;
 }
-.custom-container{
-    background-color: #f0d358;
+.custom-container {
+    background-color: #FCCB16;
     width: 100% !important;
-    clip-path: polygon(50% 87%, 100% 62%, 100% 0, 0 0, 0 62%);
-    margin-top:-1px;
+    clip-path: polygon(50% 72.45%, 100% 50%, 100% 0px, 0px 0px, 0px 50%);
+    margin-top: -1px;
     height: 220px;
 }
 .arrowdown > a{
@@ -24668,11 +24663,13 @@ form#searchform input[type="submit"]:hover {
     padding: 0 10%;
     max-width: 800px
 }
-
+.text-banner-h2 {
+    margin-top: 20px;
+}
 .headertext > p {
     color: #343a40;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 450;
 }
 
 .headertext > a {
@@ -24680,10 +24677,9 @@ form#searchform input[type="submit"]:hover {
     font-size: 14px;
     font-weight: 400;
 }
-
-.arrow-index{
+.arrow-index {
     z-index: 2;
-    margin-top: -70px;
+    margin-top: -100px;
 }
 
 .text_container{
@@ -24704,15 +24700,69 @@ form#searchform input[type="submit"]:hover {
     list-style: none !important;
 }
 
-@media (max-width: 800px) {
-    .headertext {
-        width: 90%;
-        padding: 0;
+.navbar-inner{
+    margin-top: -3px;
+}
+
+
+@media (max-width: 1200px) {
+    .text-banner{
+        margin-top: -600px;
     }
+    .text-banner-h2{
+        margin-top: 0;
+    }
+    .custom-container{
+
+    }
+    .banner-image{
+        height: 480px;
+        background-position: top;
+    }
+}
+
+@media (max-width: 800px) {
+    .headertext{
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .header-social{
+        float:none;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .custom-container{
+        height: 250px;
+    }
+}
+
+@media (max-width: 530px) {
+    .custom-container{
+        height: 300px;
+    }
+    .arrow-index {
+        margin-top: -120px;
+    }
+}
+
+@media (max-width: 450px) {
     .custom-container{
         height: 350px;
     }
-    .navbar-menu{
-        margin-top: -2px;
+    .arrow-index {
+        margin-top: -140px;
+    }
+}
+
+@media (max-width: 400px) {
+    .custom-container{
+        height: 400px;
+    }
+    .arrow-index {
+        margin-top: -150px;
     }
 }

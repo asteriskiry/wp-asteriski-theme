@@ -24746,6 +24746,31 @@ header {
         height: 650px;
     }
 
+    .blog-section .blog-layout-sidebar {
+        max-width: 70%;
+    }
+    .headertext {
+        width: 70%;
+    }
+    .container {
+        max-width: 70%;
+    }
+
+    h2, .h2 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+
+    .card-blog-body p {
+        font-size: 16px;
+    }
+    .headertext>p {
+        font-size: 18px;
+    }
+
     .hero-text {
         top: 325px;
     }

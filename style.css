@@ -24801,3 +24801,28 @@ header {
         height: 450px;
     }
 }
+
+/*Kulukorvaus*/
+.one-half,
+.one-third {
+    position: relative;
+    float: left;
+}
+
+.one-half { width: 48%; }
+.one-third { width: 30.66%; }
+
+
+@media only screen and (max-width: 767px) {
+    .one-half, .one-third {
+        width: 100%;
+    }
+}
+
+.wpcf7-form label {
+    width: 95%;
+}
+
+.wpcf7-submit{
+    margin-top: 80px;
+}

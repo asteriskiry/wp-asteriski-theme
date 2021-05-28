@@ -38,7 +38,6 @@ get_header();
     <div class="height-container">
         <div class="custom-container">
             <div class="headertext">
-                <h2 class="text-banner-h2">Mikä?</h2>
                 <p>
                     <?php
                     $asteriski_social_icon_url_facebook = get_theme_mod("asteriski_social_icon_url_facebook", '');

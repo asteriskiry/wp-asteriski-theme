@@ -24704,6 +24704,8 @@ header {
 }
 
 .headertext > p {
+    padding-top: 15px;
+    text-align: center;
     color: #343a40;
     font-size: 14px;
     font-weight: 450;

@@ -238,6 +238,7 @@ function wc_remove_checkout_fields( $fields ) {
 
 	// Billing fields
 	unset( $fields['billing']['billing_company'] );
+	unset( $fields['billing']['billing_country'] );
 	unset( $fields['billing']['billing_state'] );
 	unset( $fields['billing']['billing_address_1'] );
 	unset( $fields['billing']['billing_address_2'] );

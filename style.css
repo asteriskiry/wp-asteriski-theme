@@ -24935,22 +24935,31 @@ span.sku_wrapper {
     padding: 0 !important;
 }
 
-.form-row > label {
-    margin: 5px !important;
-    width: 140px !important;
-}
 
 .woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
     width: 100% !important;
     overflow: visible;
 }
 
+.form-row{
+    max-width: 600px !important;
+}
+
+.form-row > label {
+    margin: 5px !important;
+    width: 30% !important;
+}
+
 .form-row > .woocommerce-input-wrapper > input {
     height: 30px !important;
     border-radius: 5px !important;
     border: 1px solid black !important;
+    width: 65% !important;
 }
 
+.notes {
+    max-width: 100% !important;
+}
 .notes > label {
     width: 100% !important;
 }

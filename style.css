@@ -24954,6 +24954,9 @@ span.sku_wrapper {
     height: 30px !important;
     border-radius: 5px !important;
     border: 1px solid black !important;
+    width: 100% !important;
+}
+.woocommerce-input-wrapper {
     width: 65% !important;
 }
 
